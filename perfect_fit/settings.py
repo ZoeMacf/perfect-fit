@@ -16,6 +16,9 @@ import os
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+if os.path.exists("env.py"):
+    import env
+
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
@@ -26,7 +29,7 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-zoemacf-perfectfit-d0spxxq49i9.ws-eu110.gitpod.io']
+ALLOWED_HOSTS = ['8000-zoemacf-perfectfit-myjy0wrtjrs.ws-eu113.gitpod.io']
 
 
 # Application definition
