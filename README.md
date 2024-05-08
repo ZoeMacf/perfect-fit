@@ -5,8 +5,8 @@
 ## Contents
 
 * User Experience
-* Design
-    - Wireframes
+* [Design](#design)
+    - [Wireframes](#wireframes)
     - Site Styling
     - Database Design
 - Features
@@ -26,6 +26,11 @@
 ### User Stories
 
 #### First Time User
+- As a first time user of Perfect Fit I want to be able to easily use the site across a wide range of devices. 
+- As a first time user I want to be able to easily navigate the site to access the content that is available to me. 
+- As a first time user I would like to be able to create an account for the site so that I may access further features. 
+- As a first time user I would like to easily be able to log in to my account. 
+
 
 #### Authenticated User
 
