@@ -12,7 +12,7 @@ Users can also participate in a puzzle exchange with other users wherein they ca
 * [Design](#design)
     - [Wireframes](#wireframes)
     - Site Styling
-    - Database Design
+    - [Database Design](#database-design)
 - Features
 - Languages and Technologies
     - Languages and Frameworks
@@ -174,7 +174,45 @@ Users can also participate in a puzzle exchange with other users wherein they ca
 
 #### ERD - Entity Relationship Diagram
 
+<img src="./documentation/Entity Relationship Diagram.png">
+
 ### Models
+
+#### Category Model
+
+This model will be used to organise all of the puzzles into various categories, so that the user can have a more refined search. 
+
+#### Product Model
+
+This model will contain all of the products for the site, this model is connected to the category model through the category field. There is also a ratings field which will link this model to to the Reviews model. 
+
+#### Reviews Model
+
+The reviews model will be used to store a user's rating and review of the a product. If a user deletes their account, their review and rating should also be deleted. 
+
+#### Order Model
+
+This model will store all of the order information for a user's order, orders will be linked to a user's profile an as such this model is connected to the UserProfile model. 
+
+#### OrderItems Model
+
+This model will be used when adding items to the bag object, each individual item added to the bag will be tracked here and the total of the bag, as items are added or removed it will update appropriately. 
+
+#### UserProfile Model
+
+The UserProfile will allow for a more customised approach on Django's built in User model, allowing for linking a user to their order history and also their reviews. It is linked to the Django User model for authentication purposes. 
+
+#### ExchangePuzzle Model
+
+This model will be used to store user submitted puzzles which they wish to exchange with other users. 
+
+#### Message Model 
+
+The Message model will be used to allow users to message each other in regards to the puzzle exchange so that they can arrange postage of the items. 
+
+#### Newsletter Model
+
+The Newsletter model will be used as blog post where site admins can add posts with updates for the overall site and also to announce any in person meetups for puzzle exchange or competitions. 
 
 ## Agile Development
 
