@@ -164,11 +164,25 @@ Users can also participate in a puzzle exchange with other users wherein they ca
 
 #### Colour Scheme
 
+<img src="./documentation/styling/color_scheme.PNG">
+
+For this project I decided to go with the above colour scheme, as this is an e-commerce site that a user would be spending a lot of time on I wanted to keep the colour scheme as minimal as possible. Another reasoning for this choice is that there will be a lot of colour in the product images and therefore I did not want the the overall site to be too busy with colour. 
+
+This scheme is subtle enough but still has a nice pop of colour with the hue of blue chosen. 
+
 #### Typography
 
-##### Heading Font
+##### Logo Font
 
-##### Content Font
+<img src="./documentation/styling/logo_font.PNG">
+
+For the logo of the site I wanted go with something slightly playful that would suit the nature of the site, for this I chose Peralta
+
+##### General Font
+
+<img src="./documentation/styling/text_font.PNG">
+
+For the overall content of the site I wanted something easy to read that would go well alongside my chosen font for the logo, for this I chose Cutive Mono
 
 ### Database Design
 
