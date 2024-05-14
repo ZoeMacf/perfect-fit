@@ -12,11 +12,11 @@ margin: 5px;
   width: 75%; 
   height: 75%; 
   object-fit: cover;
-  float: left;
 }
 
 
 #logo-font {
   font-family: Peralta;
   color: black;
+  float: right;
 }
