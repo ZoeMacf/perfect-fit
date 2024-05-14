@@ -55,7 +55,8 @@ INSTALLED_APPS = [
     'newsletter',
     'products',
     'puzzle_exchange',
-    'users'
+    'users',
+    'user_msgs'
 ]
 
 MIDDLEWARE = [
