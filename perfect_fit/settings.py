@@ -52,6 +52,7 @@ INSTALLED_APPS = [
     'home',
     'bag',
     'checkout',
+    'newsletter',
     'products',
     'puzzle_exchange',
     'users'
