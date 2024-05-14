@@ -1,4 +1,5 @@
 asgiref==3.8.1
+cloudinary==1.40.0
 Django==3.2.25
 django-allauth==0.41.0
 django-summernote==0.8.20.0
