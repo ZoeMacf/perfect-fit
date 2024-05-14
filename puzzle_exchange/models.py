@@ -1,5 +1,6 @@
 from django.db import models
 from users.models import UserProfile
+from cloudinary.models import CloudinaryField
 
 class PuzzleExchange(models.Model):
 
@@ -8,7 +9,7 @@ class PuzzleExchange(models.Model):
  submitted_on = models.DateTimeField(auto_now=True)
  approved_submission = models.BooleanField(default=False)
  submission_text = models.TextField()
- puzzle_image = models.CloudinaryField('image', default='placeholder')
+ puzzle_image = CloudinaryField("image", default="placeholder")
 
  def __str__(self):
           return f"{self.submission_title}"

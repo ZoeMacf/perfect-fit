@@ -1,4 +1,8 @@
 from django.db import models
+from cloudinary.models import CloudinaryField
+from django.core.validators import MaxValueValidator, MinValueValidator
+
+from users.models import UserProfile
 
 class Category(models.Model):
 
@@ -22,7 +26,22 @@ class Product(models.Model):
   price = models.DecimalField(max_digits=6, decimal_places=2)
   rating = models.DecimalField(max_digits=6, decimal_places=2, null=True, blank=True)
   image_url = models.URLField(max_length=1024, null=True, blank=True)
-  image = models.ImageField(null=True, blank=True)
+  image = CloudinaryField("image", default="placeholder")
 
   def __str__(self):
         return self.name
+
+class Review(models.Model):
+    product = models.ForeignKey(
+        Product, on_delete=models.CASCADE, related_name="reviews"
+    )
+    user_profile = models.ForeignKey(UserProfile, on_delete=models.CASCADE, related_name='submitted_reviews')
+    rating = models.IntegerField(
+        default=5, validators=[MaxValueValidator(5), MinValueValidator(1)]
+    )
+    review_text = models.TextField()
+    created_on = models.DateTimeField(auto_now_add=True)
+    approved = models.BooleanField(default=False)
+
+    def __str__(self):
+        return f'{self.user_profile} review for {self.product}'
