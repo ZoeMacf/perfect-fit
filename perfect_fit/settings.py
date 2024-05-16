@@ -29,9 +29,9 @@ if os.path.exists("env.py"):
 SECRET_KEY = os.environ.get("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['8000-zoemacf-perfectfit-myjy0wrtjrs.ws-eu114.gitpod.io']
+ALLOWED_HOSTS = ['8000-zoemacf-perfectfit-myjy0wrtjrs.ws-eu114.gitpod.io', '.herokuapp.com']
 
 
 # Application definition
