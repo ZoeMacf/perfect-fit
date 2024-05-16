@@ -1,0 +1,352 @@
+[
+  {
+    "pk": 1,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5001340155",
+      "name": "Greenhouse Morning 500 Pieces Jigsaw Puzzle",
+      "description": "It’s a parrot’s paradise amid the palms and plants in this sun-dappled conservatory brimming with controlled chaos in our “Greenhouse Morning” puzzle! Our 500 piece jigsaws are crafted with premium quality materials and measure 49 x 36cm when complete.",
+      "price": 13.99,
+      "category": 1,
+      "rating": 4.6,
+      "image_url": "",
+      "image": "500_piece_1.png"
+    }
+  },
+  {
+    "pk": 2,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5001600425",
+      "name": "Hamnoy Village 500 Piece Jigsaw Puzzle",
+      "description": "Hamnoy Village 500 Piece Jigsaw Puzzle. The most appealing images, the greatest variety of sizes and signature Clementoni quality for a range that is a gold standard for jigsaw lovers everywhere.",
+      "price": 12.99,
+      "category": 1,
+      "rating": 4.6,
+      "image_url": "",
+      "image": "500_piece_2.webp"
+    }
+  },
+  {
+    "pk": 3,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5001730010",
+      "name": "Promenade in Paris 500 Piece Jigsaw Puzzle",
+      "description": "The most appealing images, the greatest variety of sizes and signature Clementoni quality for a range that is a gold standard for jigsaw lovers everywhere. Size of completed jigsaw puzzle: 49 x 36 cm",
+      "price": 12.99,
+      "category": 1,
+      "rating": 4.7,
+      "image_url": "",
+      "image": "500_piece_3.webp"
+    }
+  },
+  {
+    "pk": 4,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5001890157",
+      "name": "Lighting Venice 500 Piece Jigsaw Puzzle",
+      "description": "The 500 piece puzzle measures 49 x 86 cm. The Clementoni High Quality Collection is characterised by beautiful motifs, quality print, precise fit, high-quality sturdy material. This helps to leave everyday stress behind and stimulate your creativity.",
+      "price": 12.99,
+      "category": 1,
+      "rating": 3.5,
+      "image_url": "",
+      "image": "500_piece_4.webp"
+    }
+  },
+  {
+    "pk": 5,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5002111605",
+      "name": "Garden Birds 500 PIECE PUZZLE",
+      "description": "Ravensburger 500-40,000 piece Puzzles are a fun way to keep you sharp by strengthening your logical thinking and short term memory while having fun! ",
+      "price": 13.99,
+      "category": 1,
+      "rating": 5,
+      "image_url": "",
+      "image": "500_piece_5.webp"
+    }
+  },
+  {
+    "pk": 6,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5002260206",
+      "name": "Tour Eiffel 2020 1000 Piece Jigsaw Puzzle",
+      "description": "The most striking images, the greatest variety of size and the quality signed Clementoni for a line that is a reference for all puzzle enthusiasts.",
+      "price": 14.99,
+      "category": 2,
+      "rating": 4.7,
+      "image_url": "",
+      "image": "1000_piece_1.webp"
+    }
+  },
+  {
+    "pk": 7,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5002440521",
+      "name": "Japanese Gardens Teahouse 1000 Piece Jigsaw Puzzle",
+      "description": "Relax into this serene scene and partake in the fine art of tea ceremony in our “Kyoto Japanese Garden Teahouse” puzzle!",
+      "price": 17.99,
+      "category": 2,
+      "rating": 4.4,
+      "image_url": "",
+      "image": "1000_piece_2.webp"
+    }
+  },
+  {
+    "pk": 8,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5002601115",
+      "name": "Machu Picchu 1000 Piece Jigsaw Puzzle",
+      "description": "Machu Picchu 1000 Piece Jigsaw Puzzle. The most striking images, the greatest variety of size and the quality signed Clementoni for a line that is a reference for all puzzle enthusiasts.",
+      "price": 14.99,
+      "category": 2,
+      "rating": 4.5,
+      "image_url": "",
+      "image": "1000_piece_3.webp"
+    }
+  },
+  {
+    "pk": 9,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5002690715",
+      "name": "Lofoten Islands 1000 Piece Jigsaw Puzzle",
+      "description": "Lofoten Islands 1000 Piece Jigsaw Puzzle. 1000 pieces adult puzzle with poster included",
+      "price": 14.99,
+      "category": 2,
+      "rating": 4.7,
+      "image_url": "",
+      "image": "1000_piece_4.webp"
+    }
+  },
+  {
+    "pk": 10,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5002701115",
+      "name": "Aspen, Colorado 1000 Piece Jigsaw Puzzle",
+      "description": "The Maroon Bells peaks are amongst the most photographed places in Colorado, and this puzzle perfectly demonstrates their appeal.",
+      "price": 17.99,
+      "category": 2,
+      "rating": 4.4,
+      "image_url": "",
+      "image": "1000_piece_5.webp"
+    }
+  },
+  {
+    "pk": 11,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5002761055",
+      "name": "Ireland Map Puzzle",
+      "description": "Learn where each county in Ireland is with this lovely wooden jigsaw of Ireland. It has 32 wooden pieces. Each county is painted a unique colour and on the county is the English spelling and Irish spelling and the county flag. The board is painted blue and it shows where Ulster, Connaght, Leinster and Munster are.",
+      "price": 15.99,
+      "category": 4,
+      "rating": 3,
+      "image_url": "",
+      "image": "wooden_puzzle_1.webp"
+    }
+  },
+  {
+    "pk": 12,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5002820069",
+      "name": "ROKR Pendulum Clock",
+      "description": "Robotime-ROKR mechanical wind-up clock timer Pendulum Clock LK501 that can work! A stylish spring-driven wooden clock with an absorbing building experience. Put the mechanism together and watch how it works. Best gift kits and hobbies for holidays and quality time",
+      "price": 59.95,
+      "category": 4,
+      "rating": 4.6,
+      "image_url": "",
+      "image": "wooden_puzzle_2.webp"
+    }
+  },
+  {
+    "pk": 13,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5002820147",
+      "name": "Time Engine - DIY Desk Calendar",
+      "description": "This a unique desk calendar 3D wooden puzzle. Its design is inspired by the Baroque style of the late Renaissance. Have fun assembling this wooden calendar with your own hands. Time and date of it can be adjusted manually.",
+      "price": 69.95,
+      "category": 4,
+      "rating": 3.2,
+      "image_url": "",
+      "image": "wooden_puzzle_3.webp"
+    }
+  },
+  {
+    "pk": 14,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5002910572",
+      "name": "Portapuzzle Board - Up To 1000 Pieces",
+      "description": "The Portapuzzle Board is the ideal jigsaw puzzle accessory to assist you when building, sorting and looking to carefully store your unfinished jigsaw puzzle. ",
+      "price": 16.99,
+      "category": 5,
+      "rating": 4.7,
+      "image_url": "",
+      "image": "accessories_1.webp"
+    }
+  },
+  {
+    "pk": 15,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5002990740",
+      "name": "Clementoni Puzzle Piece Sorter",
+      "description": "6 card shaped trays to collect all pieces and order them when assembling your favourite puzzles.",
+      "price": 17.99,
+      "category": 5,
+      "rating": 4.8,
+      "image_url": "",
+      "image": "accessories_2.webp"
+    }
+  },
+  {
+    "pk": 16,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5003050248",
+      "name": "Ravensburger Stand & Go Puzzle Board Easel",
+      "description": "This simple-to-build click together easel makes puzzling more comfortable. The gently angled non-slip surface reduces the amount of stretching required to reach the top of the jigsaw, helping you to avoid strain as you puzzle the day away.",
+      "price": 27.99,
+      "category": 5,
+      "rating": 4.4,
+      "image_url": "",
+      "image": "accessories_3.webp"
+    }
+  },
+  {
+    "pk": 17,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5003070787",
+      "name": "Puzzle & Roll Up To 1500 Piece Puzzles",
+      "description": "Simply build the jigsaw on the specially designed puzzling felt and when you are ready to take a break or store it away for another day you simply roll the felt mat around the Puzzle & Roll tube and fasten with the straps provided.",
+      "price": 16.99,
+      "category": 5,
+      "rating": 4.4,
+      "image_url": "",
+      "image": "accessories_4.webp"
+    }
+  },
+  {
+    "pk": 18,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5003090182",
+      "name": "Paris View 1500 Piece Jigsaw Puzzle",
+      "description": "Build this spectacular Paris skyline with Clemton's 1500 Piece Puzzle",
+      "price": 15.99,
+      "category": 3,
+      "rating": 4.8,
+      "image_url": "",
+      "image": "1500_piece_1.webp"
+    }
+  },
+  {
+    "pk": 19,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5003090186",
+      "name": "Tiger 1500 Piece Jigsaw Puzzle",
+      "description": "The 1500 pieces puzzle has a put Dimensions 59,2 x 33.2 cm. A wonderful design, quality printing, perfect fit, high-quality sturdy material that the Clementoni High Quality Collection made from you.",
+      "price": 19.99,
+      "category": 3,
+      "rating": 5,
+      "image_url": "",
+      "image": "1500_piece_2.webp"
+    }
+  },
+  {
+    "pk": 20,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5003161326",
+      "name": "Le Mont Saint-Michel 1500 Piece Jigsaw Puzzle",
+      "description": "High quality materials and the most beautiful images for a truly unique puzzle. Almost invisible joints.",
+      "price": 19.99,
+      "category": 3,
+      "rating": 4.7,
+      "image_url": "",
+      "image": "1500_piece_3.webp"
+    }
+  },
+  {
+    "pk": 21,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5003230723",
+      "name": "Dubai Marina 1500 Piece Jigsaw Puzzle",
+      "description": "Piece together this gorgeous view of the Dubai Marina with Clementoni.",
+      "price": 19.99,
+      "category": 3,
+      "rating": 4.3,
+      "image_url": "",
+      "image": "1500_piece_4.webp"
+    }
+  },
+  {
+    "pk": 22,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5003270936",
+      "name": "4 in 1 Spiderman Jigsaw Puzzle",
+      "description": "4 In 1 Marvel Spiderman Spiderverse Jigsaw Puzzle. Children's jigsaw puzzle 4 in 1 with 4 different images and tiles.",
+      "price": 9.99,
+      "category": 6,
+      "rating": 5,
+      "image_url": "",
+      "image": "box_1.webp"
+    }
+  },
+  {
+    "pk": 23,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5003360384",
+      "name": "Frozen 2 - 4 in 1 Jigsaw Puzzle ",
+      "description": "Let the magical Frozen adventure begin with these fun puzzles of Elsa, Anna, Olfa and Sven. Four high quality cardboard jigsaw puzzles in 12, 16, 20 and 24 pieces.",
+      "price": 9.99,
+      "category": 6,
+      "rating": 4.8,
+      "image_url": "",
+      "image": "box_2.webp"
+    }
+  },
+  {
+    "pk": 24,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5003440111",
+      "name": "The Gruffalo - 4 in 1 Jigsaw Puzzle",
+      "description": "This set of 4 fantastic illustrations from The Gruffalo is a wonderful puzzle to piece together.",
+      "price": 9.99,
+      "category": 6,
+      "rating": 3.8,
+      "image_url": "",
+      "image": "box_3.webp"
+    }
+  },
+  {
+    "pk": 25,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5003540313",
+      "name": "Paw Patrol - 4 in 1 Jigsaw Puzzle",
+      "description": "Join your favourite pups from PAW Patrol on their rescue adventures in this fantastic set of 4 puzzles!",
+      "price": 106.99,
+      "category": 9,
+      "rating": 6,
+      "image_url": "",
+      "image": "box_4.webp"
+    }
+  }
+]

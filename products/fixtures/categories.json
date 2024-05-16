@@ -1,0 +1,50 @@
+[
+  {
+    "pk": 1,
+    "model": "products.category",
+    "fields": {
+      "name": "500_pieces",
+      "friendly_name": "500 Pieces"
+    }
+  },
+  {
+    "pk": 2,
+    "model": "products.category",
+    "fields": {
+      "name": "1000_pieces",
+      "friendly_name": "1000 Pieces"
+    }
+  },
+  {
+    "pk": 3,
+    "model": "products.category",
+    "fields": {
+      "name": "1500_pieces",
+      "friendly_name": "1500 Pieces"
+    }
+  },
+  {
+    "pk": 4,
+    "model": "products.category",
+    "fields": {
+      "name": "wooden_puzzles",
+      "friendly_name": "Wooden Puzzles"
+    }
+  },
+  {
+    "pk": 5,
+    "model": "products.category",
+    "fields": {
+      "name": "puzzle_accessories",
+      "friendly_name": "puzzle_accessories"
+    }
+  },
+  {
+    "pk": 6,
+    "model": "products.category",
+    "fields": {
+      "name": "4_in_a_box",
+      "friendly_name": "4 in a Box"
+    }
+  }
+]
