@@ -9,7 +9,7 @@
       "price": 13.99,
       "category": 1,
       "rating": 4.6,
-      "image_url": "",
+      "image_url": "https://res.cloudinary.com/dt6vafccn/image/upload/v1715893803/PP5/behzzxqwlnwmab7ejubq.webp",
       "image": "500_piece_1.png"
     }
   },
@@ -23,7 +23,7 @@
       "price": 12.99,
       "category": 1,
       "rating": 4.6,
-      "image_url": "",
+      "image_url": "https://res.cloudinary.com/dt6vafccn/image/upload/v1715893803/PP5/jrhu3hxnj68zpfcy6tgc.webp",
       "image": "500_piece_2.webp"
     }
   },
@@ -37,7 +37,7 @@
       "price": 12.99,
       "category": 1,
       "rating": 4.7,
-      "image_url": "",
+      "image_url": "https://res.cloudinary.com/dt6vafccn/image/upload/v1715893803/PP5/eevfyf4mze7fiuyrpgg1.webp",
       "image": "500_piece_3.webp"
     }
   },
@@ -51,7 +51,7 @@
       "price": 12.99,
       "category": 1,
       "rating": 3.5,
-      "image_url": "",
+      "image_url": "https://res.cloudinary.com/dt6vafccn/image/upload/v1715893803/PP5/smsvnqk9axetce8t7okw.webp",
       "image": "500_piece_4.webp"
     }
   },
@@ -65,7 +65,7 @@
       "price": 13.99,
       "category": 1,
       "rating": 5,
-      "image_url": "",
+      "image_url": "https://res.cloudinary.com/dt6vafccn/image/upload/v1715893804/PP5/gjfchrrmaytuysuhexqh.webp",
       "image": "500_piece_5.webp"
     }
   },
@@ -149,7 +149,7 @@
       "price": 15.99,
       "category": 4,
       "rating": 3,
-      "image_url": "",
+      "image_url": "https://res.cloudinary.com/dt6vafccn/image/upload/v1715893863/PP5/r7jqrhmdwvqs2d6bvzvc.webp",
       "image": "wooden_puzzle_1.webp"
     }
   },
@@ -163,7 +163,7 @@
       "price": 59.95,
       "category": 4,
       "rating": 4.6,
-      "image_url": "",
+      "image_url": "https://res.cloudinary.com/dt6vafccn/image/upload/v1715893864/PP5/vnvaiuktfupqrmcerdny.webp",
       "image": "wooden_puzzle_2.webp"
     }
   },
@@ -177,7 +177,7 @@
       "price": 69.95,
       "category": 4,
       "rating": 3.2,
-      "image_url": "",
+      "image_url": "https://res.cloudinary.com/dt6vafccn/image/upload/v1715893863/PP5/sssgf6rk4twg5nljxsgb.webp",
       "image": "wooden_puzzle_3.webp"
     }
   },
@@ -191,7 +191,7 @@
       "price": 16.99,
       "category": 5,
       "rating": 4.7,
-      "image_url": "",
+      "image_url": "https://res.cloudinary.com/dt6vafccn/image/upload/v1715893827/PP5/h9q2kjpt4jf7ocirpkjo.webp",
       "image": "accessories_1.webp"
     }
   },
@@ -205,7 +205,7 @@
       "price": 17.99,
       "category": 5,
       "rating": 4.8,
-      "image_url": "",
+      "image_url": "https://res.cloudinary.com/dt6vafccn/image/upload/v1715893829/PP5/p5j2zobrlid2muzhdjma.webp",
       "image": "accessories_2.webp"
     }
   },
@@ -219,7 +219,7 @@
       "price": 27.99,
       "category": 5,
       "rating": 4.4,
-      "image_url": "",
+      "image_url": "https://res.cloudinary.com/dt6vafccn/image/upload/v1715893827/PP5/dycf8k8s48qz97sxl2nx.webp",
       "image": "accessories_3.webp"
     }
   },
@@ -233,7 +233,7 @@
       "price": 16.99,
       "category": 5,
       "rating": 4.4,
-      "image_url": "",
+      "image_url": "https://res.cloudinary.com/dt6vafccn/image/upload/v1715893827/PP5/pajumxps4b1nmfrpwoul.webp",
       "image": "accessories_4.webp"
     }
   },
@@ -247,7 +247,7 @@
       "price": 15.99,
       "category": 3,
       "rating": 4.8,
-      "image_url": "",
+      "image_url": "https://res.cloudinary.com/dt6vafccn/image/upload/v1715893817/PP5/kxyqrvhpawgqmrtsusv2.webp",
       "image": "1500_piece_1.webp"
     }
   },
@@ -261,7 +261,7 @@
       "price": 19.99,
       "category": 3,
       "rating": 5,
-      "image_url": "",
+      "image_url": "https://res.cloudinary.com/dt6vafccn/image/upload/v1715893818/PP5/om1kbrnpwueghzwxblty.webp",
       "image": "1500_piece_2.webp"
     }
   },
@@ -275,7 +275,7 @@
       "price": 19.99,
       "category": 3,
       "rating": 4.7,
-      "image_url": "",
+      "image_url": "https://res.cloudinary.com/dt6vafccn/image/upload/v1715893817/PP5/wthctceadykrz7xwmx24.webp",
       "image": "1500_piece_3.webp"
     }
   },
@@ -289,7 +289,7 @@
       "price": 19.99,
       "category": 3,
       "rating": 4.3,
-      "image_url": "",
+      "image_url": "https://res.cloudinary.com/dt6vafccn/image/upload/v1715893818/PP5/pl0b07mg9uhpa0e3wkcy.webp",
       "image": "1500_piece_4.webp"
     }
   },
@@ -303,7 +303,7 @@
       "price": 9.99,
       "category": 6,
       "rating": 5,
-      "image_url": "",
+      "image_url": "https://res.cloudinary.com/dt6vafccn/image/upload/v1715893855/PP5/kn94wthy0ozedumzbkjd.webp",
       "image": "box_1.webp"
     }
   },
@@ -317,7 +317,7 @@
       "price": 9.99,
       "category": 6,
       "rating": 4.8,
-      "image_url": "",
+      "image_url": "https://res.cloudinary.com/dt6vafccn/image/upload/v1715893854/PP5/dqr00yv0cwcds8lrfxvu.webp",
       "image": "box_2.webp"
     }
   },
@@ -331,7 +331,7 @@
       "price": 9.99,
       "category": 6,
       "rating": 3.8,
-      "image_url": "",
+      "image_url": "https://res.cloudinary.com/dt6vafccn/image/upload/v1715893855/PP5/sxmqpfhkvoq9onvqx2tj.webp",
       "image": "box_3.webp"
     }
   },
@@ -345,7 +345,7 @@
       "price": 106.99,
       "category": 6,
       "rating": 4.2,
-      "image_url": "",
+      "image_url": "https://res.cloudinary.com/dt6vafccn/image/upload/v1715893855/PP5/skroinx7rhj3zl8ppwls.webp",
       "image": "box_4.webp"
     }
   }
