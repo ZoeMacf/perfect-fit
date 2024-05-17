@@ -8,6 +8,7 @@ def all_products(request):
   """ A view to display all of the products available"""
 
   products = Product.objects.all()
+  print("products : ", products)
 
   context = {
         'products': products
