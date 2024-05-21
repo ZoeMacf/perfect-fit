@@ -8,10 +8,10 @@ Users can also participate in a puzzle exchange with other users wherein they ca
 
 ## Contents
 
-* User Experience
+* [User Experience](#user-experience)
 * [Design](#design)
     - [Wireframes](#wireframes)
-    - Site Styling
+    - [Site Styling](site-styling)
     - [Database Design](#database-design)
 - Features
 - Languages and Technologies
