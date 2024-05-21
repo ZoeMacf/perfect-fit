@@ -31,7 +31,6 @@ def all_products(request):
 
     if 'category' in request.GET:
         categories = request.GET.getlist('category')
-        print("those are categories ",categories)
         products = products.filter(category__name__in=categories)
         categories = Category.objects.filter(name__in=categories)
 
