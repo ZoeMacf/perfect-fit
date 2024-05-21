@@ -27,18 +27,29 @@ Users can also participate in a puzzle exchange with other users wherein they ca
 
 ## User Experience
 
-### User Stories
+### User Goals
 
 #### First Time User
 - As a first time user of Perfect Fit I want to be able to easily use the site across a wide range of devices. 
 - As a first time user I want to be able to easily navigate the site to access the content that is available to me. 
+- As a first time user I would like to be able to search for products easily.
+- As a first time user I would like to filter products by categories
 - As a first time user I would like to be able to create an account for the site so that I may access further features. 
 - As a first time user I would like to easily be able to log in to my account. 
 
 
 #### Authenticated User
+- As an authenticated user I would like to be able to view my profile page. 
+- As an authenticated user I would like to use the puzzle exchange to view puzzles people have uploaded. 
+- As an authenticated user I would like to submit my own puzzles to the puzzle exchange
+- As an authenticated user I would like to be able to message other users who I wish to exchange puzzles with. 
+- As an authenticated user I would like to submit reviews on products I have purchased. 
+- As an authenticated user I would like to be able to view my order history. 
 
 #### Site Admin 
+
+- As a site admin I would like to be able to add, edit or delete products to the store using a dedicted site owner only front end page. 
+- As a site admin I would like to approve any submitted user reviews. 
 
 ## Design
 
