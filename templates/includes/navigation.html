@@ -1,22 +1,46 @@
-  <div class="container-fluid">
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="{% url 'all_products' %}">Puzzles</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Puzzle Exchange</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">FAQ</a>
-        </li>
-        </li>
-      </ul>
-    </div>
-  </div>
+<div class="collapse navbar-collapse" id="main-nav">
+  <ul class="navbar-nav w-auto mx-auto">
+      <li class="nav-item dropdown">
+          <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              All Products
+          </a>
+          <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
+              <a href="" class="dropdown-item">By Price</a>
+              <a href="" class="dropdown-item ">By Rating</a>
+              <a href="" class="dropdown-item ">By Category</a>
+              <a href="{% url 'all_products' %}" class="dropdown-item">All Products</a>
+          </div>
+      </li>
+
+      <li class="nav-item dropdown">
+          <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Puzzles
+          </a>
+          <div class="dropdown-menu border-0" aria-labelledby="puzzles-link">
+              <a href="{% url 'all_products' %}?category=500_pieces" class="dropdown-item">500 Pieces</a>
+              <a href="{% url 'all_products' %}?category=1000_pieces" class="dropdown-item">1000 Pieces</a>
+              <a href="{% url 'all_products' %}?category=1500_pieces" class="dropdown-item">1500 Pieces</a>
+              <a href="{% url 'all_products' %}?category=wooden_puzzles" class="dropdown-item">Wooden Jigsaw Puzzles</a>
+              <a href="{% url 'all_products' %}?category=4_in_a_box" class="dropdown-item">4 in a Box</a>
+              <a href="{% url 'all_products' %}?category=puzzle_accessories" class="dropdown-item">Accessories</a>
+          </div>
+      </li>
+
+      <li class="nav-item dropdown">
+          <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="puzzle-exchange-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Puzzle Exchange
+          </a>
+          <div class="dropdown-menu border-0" aria-labelledby="puzzle-exchange-link">
+              <a href="" class="dropdown-item">All Submissions</a>
+              <a href="" class="dropdown-item">Newly Submitted</a>
+              <a href="" class="dropdown-item">My Submissions</a>
+          </div>
+      </li>
+
+      <li class="nav-item dropdown">
+          <a class="logo-font font-weight-bold nav-link text-black" href="#" id="faq-link"  aria-haspopup="true" aria-expanded="false">
+              FAQ
+          </a>
+      </li>
+  </ul>
+</div>
