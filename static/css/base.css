@@ -21,6 +21,10 @@ margin: 5px;
 
 /* footer styling */
 
-footer {
-  border: 4px black;
+.social-media li {
+  list-style-type: none;
+}
+
+.further-information li {
+  list-style-type: none;
 }
