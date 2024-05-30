@@ -1,3 +1,12 @@
+html {
+  height: 100%;
+}
+
+body {
+  height: calc(100vh - 164px);
+}
+
+
 #logo-container {
 height: 150px;
 width: 150px;
