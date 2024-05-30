@@ -53,6 +53,7 @@ INSTALLED_APPS = [
 
     # My Apps
     'home',
+    'about_us',
     'bag',
     'checkout',
     'faq',
