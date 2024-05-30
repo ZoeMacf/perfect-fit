@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<div class="row">
+  <div class="col-12 text-center my-2 py-1">
+    <h3>Frequently Asked Questions</h3>
+  </div>
+  <div class="row">
+    <a class="question-title col-12 text-center my-2 py-1" href="#">Q: This is a question</a>
+    <div class="answer-content col-12 text-center my-2 py-1">A: This is an answer</div>
+    <a class="question-title col-12 text-center my-2 py-1" href="#">Q: This is a question</a>
+    <div class="answer-content col-12 text-center my-2 py-1">A: This is an answer</div>
+    <a class="question-title col-12 text-center my-2 py-1" href="#">Q: This is a question</a>
+    <div class="answer-content col-12 text-center my-2 py-1">A: This is an answer</div>
+</div>
+
+{% endblock %}
+
+{% block postloadjs %}
+  {{ block.super }}
+  <!-- https://stackoverflow.com/questions/2403146/how-to-create-expandable-faq-page-in-html -->
+  <script type="text/javascript">
+    $(document).ready(function(){
+        $('.question-title').click(function(){
+            $('.answer-content').hide();
+            $(this).next('.answer-content').show();
+        });
+    });
+    </script>
+{% endblock %}

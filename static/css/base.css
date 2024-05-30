@@ -28,6 +28,12 @@ margin: 5px;
 
 /* all-products */
 
+/* faq styling */
+
+.answer-content {
+  display: hidden;
+}
+
 /* footer styling */
 
 .social-media li {
