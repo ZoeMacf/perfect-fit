@@ -26,7 +26,17 @@ margin: 5px;
   float: right;
 }
 
+.content-font {
+  font-family: 'Cutive-Mono', monospace;
+}
+
 /* home page */
+
+.tagline {
+  background-color: black;
+  font-family: 'Cutive-Mono', monospace;
+  color: white;
+}
 
 .banner-container {
   height: 420px;
