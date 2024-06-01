@@ -44,6 +44,10 @@ margin: 5px;
   font-size: large;
 }
 
+.btn-style {
+  background-color: #191923;
+}
+
 /* home page */
 
 .tagline {
