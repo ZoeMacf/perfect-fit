@@ -13,6 +13,7 @@ Users can also participate in a puzzle exchange with other users wherein they ca
     - [Wireframes](#wireframes)
     - [Site Styling](site-styling)
     - [Database Design](#database-design)
+* [Agile Development](#agile-development)
 - Features
 - Languages and Technologies
     - Languages and Frameworks
