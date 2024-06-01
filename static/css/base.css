@@ -26,6 +26,20 @@ margin: 5px;
   float: right;
 }
 
+/* home page */
+
+.banner-container {
+  height: 420px;
+  width: 260px;
+  margin: 5px;
+}
+
+.home-banner {
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover;
+}
+
 /* all-products */
 
 /* faq styling */
