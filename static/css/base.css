@@ -7,6 +7,15 @@ body {
   background-color: #FBFEF9;
 }
 
+/* from Bulma */
+.icon {
+  align-items: center;
+  display: inline-flex;
+  justify-content: center;
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
 .delivery-banner {
   background-color: #191923;
   font-family: 'Cutive Mono', monospace;
@@ -68,6 +77,16 @@ margin: 5px;
 }
 
 /* all-products */
+
+/* shopping bag */
+
+.update_link {
+  cursor: pointer;
+}
+
+.remove-link {
+  cursor: pointer;
+}
 
 /* faq styling */
 

@@ -4,6 +4,22 @@ html {
 
 body {
   height: calc(100vh - 164px);
+  background-color: #FBFEF9;
+}
+
+/* from Bulma */
+.icon {
+  align-items: center;
+  display: inline-flex;
+  justify-content: center;
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.delivery-banner {
+  background-color: #191923;
+  font-family: 'Cutive Mono', monospace;
+  font-weight: bold;
 }
 
 
@@ -22,11 +38,55 @@ margin: 5px;
 
 #logo-font {
   font-family: Peralta;
-  color: black;
+  color: #191923;
   float: right;
 }
 
+.content-font {
+  font-family: 'Cutive-Mono', monospace;
+}
+
+.navbar-style {
+  background-color: #191923;
+  font-family: 'Cutive Mono', monospace;
+  color: #FBFEF9;
+  font-size: large;
+}
+
+.btn-style {
+  background-color: #191923;
+}
+
+/* home page */
+
+.tagline {
+  font-family: 'Cutive-Mono', monospace;
+  color: #191923;
+}
+
+.banner-container {
+  height: 420px;
+  width: 260px;
+  margin: 5px;
+}
+
+.home-banner {
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover;
+}
+
 /* all-products */
+
+/* shopping bag */
+
+.update_link {
+  cursor: pointer;
+}
+
+.remove-link {
+  cursor: pointer;
+}
 
 /* faq styling */
 
