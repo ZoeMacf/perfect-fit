@@ -4,6 +4,13 @@ html {
 
 body {
   height: calc(100vh - 164px);
+  background-color: #FBFEF9;
+}
+
+.delivery-banner {
+  background-color: #191923;
+  font-family: 'Cutive Mono', monospace;
+  font-weight: bold;
 }
 
 
@@ -22,7 +29,7 @@ margin: 5px;
 
 #logo-font {
   font-family: Peralta;
-  color: black;
+  color: #191923;
   float: right;
 }
 
@@ -30,12 +37,18 @@ margin: 5px;
   font-family: 'Cutive-Mono', monospace;
 }
 
+.navbar-style {
+  background-color: #191923;
+  font-family: 'Cutive Mono', monospace;
+  color: #FBFEF9;
+  font-size: large;
+}
+
 /* home page */
 
 .tagline {
-  background-color: black;
   font-family: 'Cutive-Mono', monospace;
-  color: white;
+  color: #191923;
 }
 
 .banner-container {
