@@ -243,13 +243,27 @@ The Newsletter model will be used as blog post where site admins can add posts w
 
 ### Initial Set Up
 
+The purpose of this Epic to help organise and create a structure for setting up the project. Beginning with creating the repository to deploying the first version of the application on Heroku
+
 ### UX Design
+
+This Epic was used to track the planning of the over all site design, which involved creating the wireframes, colour schemes and font choices. 
 
 ### User Experience
 
+The purpose of this Epic was to focus on one of the central parts of the overall application, which is the user. All of the stories included within this epic were central to how a user should experience the site and what would create the best experience for them. 
+
 ### User Authentication
 
+The purpose of this Epic was the setting up authentication checks throughout the application, to ensure that user's can create accounts, sign in and log out but also would have access to different features than a guest user when logged in. 
+
+### Stripe Payment
+
+This Epic was used to keep track of setting up Stripe as a payment processor for the site, it also focussed on testing Stripe implementation, it tied in with Authentication through order confirmation emails. 
+
 ### Documentation
+
+This Epic was designed to keep track of what needed to be done for the README. 
 
 ### MoSCoW
 
