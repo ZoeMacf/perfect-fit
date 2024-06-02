@@ -1,5 +1,6 @@
 {% extends 'base.html' %}
 {% load static %}
+{% load bag_tools %}
 
 {% block content %}
 
@@ -71,7 +72,7 @@
                       <a class="remove-item text-danger float-end" id="remove_{{ item.item_id }}" href="#"><small>Remove</small></a>                    
                     </td>
                     <td class="py-3">
-                      <p class="my-0 content-font">€{{ item.product.price }}</p>
+                      <p class="my-0 content-font">€{{ item.product.price | calc_subtotal:item.quantity }}</p>
                     </td>
                 </tr>
             {% endfor %}
