@@ -100,6 +100,16 @@
     </div>
   </div>
 </div>
+
+<div class="row">
+  <div class="col">
+    <a class="scroll-btn btn btn-dark float-end  btn-lg m-5 py-1">
+      <span class="icon">
+        <i class="fa-solid fa-arrow-up fa-sm"></i>
+      </span>
+    </a>
+  </div>
+</div>
 {% endblock %}
 
 {% block postloadjs %}
@@ -125,5 +135,10 @@
             window.location.replace(currentUrl);
         }
     })
+
+    $('.scroll-btn').click(function(e) {
+      window.scrollTo(0,0)
+    })
+
 </script>
 {% endblock %}
