@@ -74,6 +74,12 @@ margin: 5px;
   background-color: #191923;
 }
 
+.bag-notification-container {
+  height: 100px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
 /* home page */
 
 .tagline {
