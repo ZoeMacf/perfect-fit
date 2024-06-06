@@ -19,16 +19,24 @@
         <div class="row">
             <div class="col">
                 <hr>
-                <h2 class="content-font mb-4">Thank You</h2>
+                <h2 class="content-font mb-4 text-uppercase">Thank You</h2>
                 <hr>
                 <p class="content-font">Your order information is below. A confirmation email will be sent to <strong>{{ order.email }}</strong></p>
             </div>
         </div>
 
+        {% if request.user.is_authenticated %}
         <div class="row">
-            <div class="col-12 col-lg-7">
-              
-            </div>
+          <div class="col-12 col-lg-7 text-right content-font">
+            <p>Have a puzzle you no longer need? Visit our puzzle exchange now!</p>
+            <a href="{% url 'puzzle_exchange' %}" class="btn btn-dark rounded my-2">
+              <span class="icon mr-2">
+                <i class="fas fa-puzzle-piece"></i>
+              </span>
+              <span class="text-uppercase">Visit the puzzle exchange</span>
+            </a>
+          </div>
         </div>
+      {% endif %}
     </div>
 {% endblock %}
