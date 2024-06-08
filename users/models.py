@@ -19,7 +19,7 @@ class UserProfile(models.Model):
   user_country = CountryField(blank_label='Country', null=True, blank=True)
 
   def __str__(self):
-    return self.UserProfile.display_name
+    return self.user.username
 
 @receiver(post_save, sender=User)
 def create_or_update_user_profile(sender, instance, created, **kwargs):
