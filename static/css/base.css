@@ -172,13 +172,36 @@ margin: 5px;
   list-style-type: none;
 }
 
+.social-media li a {
+  color: #FBFEF9;
+}
+
+.fa-facebook:hover {
+  text-shadow: 0 0 5px #FBFEF9;
+}
+
+.fa-youtube:hover {
+  text-shadow: 0 0 5px #FBFEF9;
+}
+
+.fa-instagram:hover {
+  text-shadow: 0 0 5px #FBFEF9;
+
+}
+
+.footer-style {
+  background-color: #191923;
+  color: #FBFEF9;
+}
+
 .further-information li {
   list-style-type: none;
+  color: #FBFEF9;
 }
 
 .footer-link a {
   text-decoration: none;
-  color: #191923;
+  color: #FBFEF9;
 }
 
 /* https://www.30secondsofcode.org/css/s/hover-underline-animation/ */
@@ -196,7 +219,7 @@ margin: 5px;
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #191923;
+  background-color: #FBFEF9;
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
