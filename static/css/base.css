@@ -53,6 +53,10 @@ margin: 5px;
   font-size: large;
 }
 
+.nav-link:hover {
+  color: #FBFEF9 !important;
+}
+
 /* toast notifications */
 
 .message-container {
@@ -216,7 +220,7 @@ margin: 5px;
   position: absolute;
   width: 100%;
   transform: scaleX(0);
-  height: 2px;
+  height: 1px;
   bottom: 0;
   left: 0;
   background-color: #FBFEF9;
