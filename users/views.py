@@ -11,10 +11,10 @@ def user_profile(request):
   profile = get_object_or_404(UserProfile, user=request.user)
 
   if request.method == 'POST':
-    form = UserProfileFprm(request.POST, instance=profile)
+    form = UserProfileForm(request.POST, instance=profile)
     if form.is_valid():
       form.save()
-      messsages.success(request, 'Profile updated successfully')
+      messages.success(request, 'Profile updated successfully')
 
   form = UserProfileForm(instance=profile)
   orders = profile.orders.all()
