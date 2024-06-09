@@ -188,6 +188,16 @@
       {% if request.user.is_authenticated %}
         <hr>
         <div class="row">
+          {% if from_profile %}
+          <div class="col-12 col-lg-7 text-right content-font">
+            <a href="{% url 'user_profile' %}" class="btn btn-dark rounded my-2">
+              <span class="icon mr-2">
+                <i class="fas fa-angle-left"></i>
+              </span>
+              <span class="text-uppercase content-font">Back to Profile</span>
+            </a>
+          </div>
+          {% else %}
           <div class="col-12 col-lg-7 text-right content-font">
             <p>Have a puzzle you no longer need? Visit our puzzle exchange now!</p>
             <a href="{% url 'puzzle_exchange' %}" class="btn btn-dark rounded my-2">
@@ -198,6 +208,7 @@
             </a>
           </div>
         </div>
+      {% endif %}
       {% endif %}
     </div>
 
