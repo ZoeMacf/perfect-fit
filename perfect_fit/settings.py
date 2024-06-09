@@ -120,6 +120,13 @@ AUTHENTICATION_BACKENDS = [
 
 SITE_ID = 1
 
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+ACCOUNT_AUTHENTICATION_METHOD = 'username_email'
+ACCOUNT_EMAIL_REQUIRED = True
+ACCOUNT_EMAIL_VERIFICATION = 'mandatory'
+ACCOUNT_SIGNUP_EMAIL_ENTER_TWICE = True
+ACCOUNT_USERNAME_MIN_LENGTH = 4
 LOGIN_URL = '/accounts/login/'
 LOGIN_REDIRECT_URL = '/'
 WSGI_APPLICATION = 'perfect_fit.wsgi.application'
@@ -190,6 +197,7 @@ STRIPE_CURRENCY = 'eur'
 STRIPE_PUBLIC_KEY = os.environ.get('STRIPE_PUBLIC_KEY', '')
 STRIPE_SECRET_KEY = os.environ.get('STRIPE_SECRET_KEY', '')
 STRIPE_WH_SECRET = os.environ.get('STRIPE_WH_SECRET', '')
+DEFAULT_FROM_EMAIL = 'perfectfit@example.com'
 
 
 # Default primary key field type
