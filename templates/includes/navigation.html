@@ -5,7 +5,7 @@
           <a class="nav-link mr-5 border-start border-end navbar-style hover-underline-animation" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               All Products
           </a>
-          <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
+          <div class="dropdown-menu border-2 border-dark" aria-labelledby="all-products-link">
               <a href="{% url 'all_products' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
               <a href="{% url 'all_products' %}?sort=rating&direction=desc" class="dropdown-item ">By Rating</a>
               <a href="{% url 'all_products' %}?sort=category&direction=asc" class="dropdown-item ">By Category</a>
@@ -18,7 +18,7 @@
           <a class="nav-link border-end mr-5 navbar-style hover-underline-animation" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
               Puzzles
           </a>
-          <div class="dropdown-menu border-0" aria-labelledby="puzzles-link">
+          <div class="dropdown-menu border-2 border-dark" aria-labelledby="puzzles-link">
               <a href="{% url 'all_products' %}?category=500_pieces" class="dropdown-item">500 Pieces</a>
               <a href="{% url 'all_products' %}?category=1000_pieces" class="dropdown-item">1000 Pieces</a>
               <a href="{% url 'all_products' %}?category=1500_pieces" class="dropdown-item">1500 Pieces</a>
@@ -32,7 +32,7 @@
           <a class="nav-link border-end mr-5 navbar-style hover-underline-animation" href="" id="puzzle-exchange-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Puzzle Exchange
           </a>
-          <div class="dropdown-menu border-0" aria-labelledby="puzzle-exchange-link">
+          <div class="dropdown-menu border-2 border-dark" aria-labelledby="puzzle-exchange-link">
               <a href="{% url 'puzzle_exchange' %}" class="dropdown-item">All Submissions</a>
               <a href="" class="dropdown-item">My Submissions</a>
           </div>
@@ -51,7 +51,7 @@
     <a class="nav-link mr-5 border-start border-end navbar-style hover-underline-animation" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         All Products
     </a>
-    <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
+    <div class="dropdown-menu border-2 border-dark" aria-labelledby="all-products-link">
         <a href="{% url 'all_products' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
         <a href="{% url 'all_products' %}?sort=rating&direction=desc" class="dropdown-item ">By Rating</a>
         <a href="{% url 'all_products' %}?sort=category&direction=asc" class="dropdown-item ">By Category</a>
@@ -63,7 +63,7 @@
     <a class="nav-link border-end mr-5 navbar-style hover-underline-animation" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
         Puzzles
     </a>
-    <div class="dropdown-menu border-0" aria-labelledby="puzzles-link">
+    <div class="dropdown-menu border-2 border-dark" aria-labelledby="puzzles-link">
         <a href="{% url 'all_products' %}?category=500_pieces" class="dropdown-item">500 Pieces</a>
         <a href="{% url 'all_products' %}?category=1000_pieces" class="dropdown-item">1000 Pieces</a>
         <a href="{% url 'all_products' %}?category=1500_pieces" class="dropdown-item">1500 Pieces</a>

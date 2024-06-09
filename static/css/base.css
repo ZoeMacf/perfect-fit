@@ -42,6 +42,11 @@ margin: 5px;
   float: right;
 }
 
+.my-account {
+  text-decoration: none;
+  color: #191923;
+}
+
 .content-font {
   font-family: 'Cutive-Mono', monospace;
 }
