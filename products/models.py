@@ -29,18 +29,3 @@ class Product(models.Model):
 
   def __str__(self):
         return self.name
-
-class Review(models.Model):
-    product = models.ForeignKey(
-        Product, on_delete=models.CASCADE, related_name="reviews"
-    )
-    user_profile = models.ForeignKey(UserProfile, on_delete=models.CASCADE, related_name='submitted_reviews')
-    rating = models.IntegerField(
-        default=5, validators=[MaxValueValidator(5), MinValueValidator(1)]
-    )
-    review_text = models.TextField()
-    created_on = models.DateTimeField(auto_now_add=True)
-    approved = models.BooleanField(default=False)
-
-    def __str__(self):
-        return f'{self.user_profile} review for {self.product}'
