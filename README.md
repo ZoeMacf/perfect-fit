@@ -284,6 +284,42 @@ This Epic was designed to keep track of what needed to be done for the README.
 
 ### Code Validation
 
+#### Lighthouse
+
+##### Home Page
+
+##### Products Page
+
+##### Products Details Page
+
+##### Bag Page
+
+##### Checkout Page
+
+##### Checkout Success Page
+
+##### About Us Page
+
+##### FAQ Page
+
+##### Puzzle Exchange Page
+
+##### Puzzle Exchange Submission Page
+
+##### Puzzle Exchange User's Submissions
+
+##### User Profile Page
+
+##### Add Product Page
+
+##### Edit Product Page
+
+##### Sign Up Page
+
+##### Log In Page
+
+##### Log Out Page
+
 ### Manual Testing
 
 ## Bugs
