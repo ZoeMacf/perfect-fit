@@ -278,7 +278,15 @@ This Epic was designed to keep track of what needed to be done for the README.
 
 ### Packages
 
-### Tools and Programs Used. 
+### Tools and Programs Used
+
+- [GitPod](https://gitpod.io/workspaces) was used as the main IDE for the project. 
+- [Git](https://git-scm.com/) was used for version control. 
+- [GitHub](https://github.com/) for hosting my repository and project board. 
+- [Heroku](https://id.heroku.com/login) was used for deployment. 
+- [Coolors](https://coolors.co/) was used for the colour palette. 
+- [FontAwesome](https://fontawesome.com/) for providing all icons used throughout the site.  
+- [Balsamiq](https://balsamiq.com/) for creating the wireframes. 
 
 ## Testing
 
