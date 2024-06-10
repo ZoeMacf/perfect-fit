@@ -1,3 +1,4 @@
+from .views import handler404
 from django.contrib import admin
 from django.urls import path, include
 
@@ -14,3 +15,5 @@ urlpatterns = [
     path('profile/', include('users.urls')),
 
 ]
+
+handler404 = 'perfect_fit.views.handler404'
