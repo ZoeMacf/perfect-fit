@@ -320,6 +320,10 @@ This Epic was designed to keep track of what needed to be done for the README.
 
 ##### Log Out Page
 
+### JavaScript Validation
+
+### Python Validation
+
 ### Manual Testing
 
 ## Bugs
