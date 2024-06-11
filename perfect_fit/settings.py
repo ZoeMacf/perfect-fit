@@ -62,6 +62,7 @@ INSTALLED_APPS = [
     'puzzle_exchange',
     'users',
     'user_msgs',
+    'user_reviews',
 
     #Other
     'crispy_forms',
