@@ -5,8 +5,8 @@ from django.db.models.functions import Lower
 from django.core.paginator import Paginator
 from django.db.models import Q
 
-from .models import Product, Category
-from .forms import ProductForm
+from .models import Product, Category, Reviews
+from .forms import ProductForm, ReviewForm
 
 # Create your views here.
 
@@ -145,3 +145,29 @@ def delete_product(request, product_id):
     product.delete()
     messages.success(request, 'Product deleted!')
     return redirect(reverse('products'))
+    
+
+def add_review(request, product_id):
+  """ add a review to product"""
+  product = get_object_or_404(Product, pk=product_id)
+  if request.method == 'POST':
+    form = ReviewForm(request.POST, request.FILES)
+    if form.is_valid():
+        review = form.save(commit=False)
+        review.author = request.user.userprofile
+        review.product = product
+        review = form.save()
+        messages.success(request, 'Successfully submitted your review!')
+        return redirect(reverse('product_detail', args=[product.id]))
+    else:
+        messages.error(request, 'Failed to submit your review. Please ensure the form is valid')
+  else:
+    form = ReviewForm()
+
+    template = 'products/add_review.html'
+    context  = {
+    'form': form,
+    'product':product
+    }
+
+    return render(request, template, context)

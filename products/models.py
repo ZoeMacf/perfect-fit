@@ -29,3 +29,20 @@ class Product(models.Model):
 
   def __str__(self):
         return self.name
+
+class Reviews(models.Model):
+    """Creates a model for the comments on recipe posts"""
+
+    product = models.ForeignKey(
+    Product, on_delete=models.CASCADE, related_name="review"
+    )
+    author = models.ForeignKey(
+    UserProfile, on_delete=models.CASCADE, related_name="reviewer"
+    )
+    review_body = models.TextField()
+    approved = models.BooleanField(default=False)
+    created_on = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+
+        return f"Review of {self.product.name} by {self.author}"
