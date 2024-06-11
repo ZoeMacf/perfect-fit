@@ -157,6 +157,21 @@ margin: 5px;
 
 /* all-products */
 
+/* bootstrap styles would not apply so custom was made */
+.page_btn {
+  height: 200px;
+  width: auto;
+  padding: 10px;
+  background-color: #191923;
+  color: #FBFEF9;
+  border-radius: 5px;
+  font-family: 'Cutive-Mono', monospace;
+  font-size: medium;
+  font-weight: 100;
+  text-decoration: none;
+
+}
+
 
 /* shopping bag */
 
