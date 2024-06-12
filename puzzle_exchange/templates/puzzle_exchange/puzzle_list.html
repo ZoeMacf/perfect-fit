@@ -31,7 +31,7 @@
       {% for puzzle in puzzles %}
       <tr>
         <td class="content-font">{{ puzzle.poster }}</td>
-        <td class="content-font"><a href="{% url 'puzzle_detail' puzzle.id %}">{{ puzzle.title }}</a></td>
+        <td class="content-font"><a class="puzzle-link" href="{% url 'puzzle_detail' puzzle.id %}">{{ puzzle.title }}</a></td>
         <td class="content-font">{{ puzzle.submitted_on }}</td>
       </tr>
       {% endfor %}
