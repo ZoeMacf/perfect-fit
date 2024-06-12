@@ -27,7 +27,7 @@ def puzzle_detail(request, puzzle_id):
         'puzzle':puzzle
     }
 
-    return render(request, 'puzzle_exchange/puzzle_detail.html')
+    return render(request, 'puzzle_exchange/puzzle_detail.html', context)
 
 def user_submissions(request):
     """ view to render a list of users submissions """

@@ -234,6 +234,19 @@ margin: 5px;
   border-radius: 5px;
 }
 
+/* puzzle exchange */
+
+.puzzle-image-container {
+  height: 200px;
+  width: 250px;
+}
+
+.puzzle-img {
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover;
+}
+
 
 /* footer styling */
 .social-media li {

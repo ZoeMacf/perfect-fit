@@ -14,23 +14,21 @@
 <div class="container-fluid">
   <div class="row">
       <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
-          <div class="img-fluid">
-            {% if puzzle.image %}
-            <a href="{{ puzzle.image.url }}" target="_blank">
-              <img class="card-img-top img-fluid" src="{{ puzzle.image.url }}" alt="{{ puzzle.name }}">
-                </a>
-                {% else %}
-                <a href="">
-                    <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ puzzle.name }}">
-                </a>
-            {% endif %}          
-            </div>
+          <div class="image-container my-5">
+              {% if puzzle.image %}
+              <a href="{{ puzzle.image.url }}" target="_blank">
+                <img class="card-img-top img-fluid rounded" src="{{ puzzle.image.url }}" alt="{{ puzzle.name }}">
+                  </a>
+                  {% else %}
+                  <a href="">
+                      <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ puzzle.name }}">
+                  </a>
+              {% endif %}
           </div>
       </div>
-
       <div class="col-12 col-md-6 col-lg-4">
           <div class="puzzle-details-container mb-5 mt-md-5">
-              <p class="mb-0">{{ puzzle.name }}</p>
-              <p class="mt-3">{{ puzzle.body }}</p>
+              <h3 class="mb-0 content-font">{{ puzzle.title }}</h3>
+              <p class="mt-3 content-font">{{ puzzle.body }}</p>
             </div>
 {% endblock %}
