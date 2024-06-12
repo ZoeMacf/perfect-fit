@@ -219,8 +219,23 @@ margin: 5px;
   display: hidden;
 }
 
-/* footer styling */
+/* about us  */
 
+.about-us-container {
+
+  height: 50%;
+  width: 50%;
+}
+
+.about-us-image {
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+
+/* footer styling */
 .social-media li {
   list-style-type: none;
 }
