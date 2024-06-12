@@ -146,7 +146,7 @@ def delete_product(request, product_id):
     messages.success(request, 'Product deleted!')
     return redirect(reverse('products'))
     
-
+@login_required
 def add_review(request, product_id):
   """ add a review to product"""
   product = get_object_or_404(Product, pk=product_id)
