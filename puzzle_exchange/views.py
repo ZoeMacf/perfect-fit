@@ -44,7 +44,7 @@ def submit_puzzle(request):
             puzzle.poster = request.user.userprofile
             puzzle = form.save()
             messages.success(request, 'Successfully submitted a puzzle!')
-            return redirect(reverse('puzzle_list'))
+            return redirect(reverse('puzzle_detail', args=[puzzle.id]))
         else: 
             messages.error(request, 'Failed to submit your puzzle. Please ensure the form is valid')
     else:
