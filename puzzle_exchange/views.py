@@ -1,4 +1,5 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
+from django.views import generic
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 
@@ -7,15 +8,26 @@ from .forms import PuzzleExchangeForm
 
 
 
-def puzzle_exchange(request):
-    """ view to render the puzzle exchange page """
+def puzzles(request):
+    """ A view to show all puzzles, also sorting and filtering queries """
 
-    return render(request, 'puzzle_exchange/puzzle_exchange.html')
+    puzzles = PuzzleExchange.objects.all()
 
-def puzzle_detail(request):
+    context = {
+        'puzzles': puzzles,
+    }
+
+    return render(request, 'puzzle_exchange/puzzle_list.html', context)
+
+def puzzle_detail(request, puzzle_id):
     """ view to render a detailed post for puzzle submission """
 
-    return render(request, 'puzzle_exchange/puzzle_details.html')
+    puzzle = get_object_or_404(PuzzleExchange, pk=puzzle_id)
+    context = {
+        'puzzle':puzzle
+    }
+
+    return render(request, 'puzzle_exchange/puzzle_detail.html')
 
 def user_submissions(request):
     """ view to render a list of users submissions """
@@ -29,12 +41,12 @@ def submit_puzzle(request):
         form = PuzzleExchangeForm(request.POST, request.FILES)
         if form.is_valid():
             puzzle = form.save(commit=False)
-            puzzle.poster = poster
+            puzzle.poster = request.user.userprofile
             puzzle = form.save()
             messages.success(request, 'Successfully submitted a puzzle!')
-            return redirect(reverse('puzzle_exchange'))
+            return redirect(reverse('puzzle_list'))
         else: 
-            messages.error(request, 'Failed to submut your puzzle. Please ensure the form is valid')
+            messages.error(request, 'Failed to submit your puzzle. Please ensure the form is valid')
     else:
         form = PuzzleExchangeForm()
 
