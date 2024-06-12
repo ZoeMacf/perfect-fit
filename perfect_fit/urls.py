@@ -15,6 +15,7 @@ urlpatterns = [
     path('checkout/', include('checkout.urls')),
     path('puzzle_exchange/', include('puzzle_exchange.urls')),
     path('profile/', include('users.urls')),
+    path('user_msgs/',include('user_msgs.urls'))
 
 ]
 
