@@ -278,6 +278,17 @@ This Epic was designed to keep track of what needed to be done for the README.
 
 ### Packages
 
+The following packages were installed throughout the development. 
+
+| Package Name| Package Description |
+| ----------- | ----------- |
+| [Django-allAuth](https://docs.allauth.org/en/latest/)   | This package was used to provide templates, views and models necessary for user authentication.    |        |
+| [Django-crispy-forms](https://django-crispy-forms.readthedocs.io/en/latest/)   | Crispy Forms was used for more customisable forms and more user friendly.   |        |
+| [Whitenoise](https://pypi.org/project/whitenoise/)   | Whitenoise was used to allow the app to serve it's own static files which would be needed for deployment.        |
+| [Cloudinary](https://console.cloudinary.com/console/c-76474938bafa5565ebd5ea8f26db45/home/product-explorer)   | Cloudinary was used for hosting product images online for deployment.        |
+| [Pillow](https://pypi.org/project/pillow/)   | Pillow was used for image processing.        |
+| [Stripe](https://dashboard.stripe.com/test/developers)   | Stripe was used for implementing a safe and secure means of taking payments and using webhooks to send confirmation emails.         |
+
 ### Tools and Programs Used
 
 - [GitPod](https://gitpod.io/workspaces) was used as the main IDE for the project. 
