@@ -18,23 +18,21 @@
 
 <div class="row">
   <div class="col">
-  <div class=" table table-responsive-md rounded">
-    <table class="table table-striped">
+  <div class="table rounded my-x">
+    <table class=" table table-striped">
     <thead>
       <tr>
-        <th scope="col"></th>
-        <th scope="col">User</th>
-        <th scope="col">Title</th>
-        <th scope="col">Date</th>
+        <th scope="col" class="content-font">User</th>
+        <th scope="col" class="content-font">Title</th>
+        <th scope="col" class="content-font">Date</th>
       </tr>
     </thead>
     <tbody>
       {% for puzzle in puzzles %}
       <tr>
-        <th scope="row"></th>
-        <td>{{ puzzle.poster }}</td>
-        <td><a href="{% url 'puzzle_detail' puzzle.id %}">{{ puzzle.title }}</a></td>
-        <td>{{ puzzle.submitted_on }}</td>
+        <td class="content-font">{{ puzzle.poster }}</td>
+        <td class="content-font"><a href="{% url 'puzzle_detail' puzzle.id %}">{{ puzzle.title }}</a></td>
+        <td class="content-font">{{ puzzle.submitted_on }}</td>
       </tr>
       {% endfor %}
     </tbody>
