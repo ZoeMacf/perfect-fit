@@ -100,25 +100,6 @@
             </div>
         </div>
     </div>
-    <div id="reviews-wrapper">
-        <div class="col-md-8 comment-card mb-4  mt-3 ">
-          <h3>Reviews:</h3>
-          <div id="review-container">
-            {% for review in reviews %}
-            <div class="p-2 comments
-              {% if not comment.approved and comment.author == user %}
-              faded{% elif not comment.approved %} d-none{% endif %}">
-              <p class="font-weight-bold">
-                {{ review.author }}
-                <span class="font-weight-normal">
-                  {{ review.created_on }}
-                </span> wrote:
-              </p>
-              <div id="comment{{ comment.id }}">
-                {{ review.review_body | linebreaks }}
-              </div>
-              {% endfor %}
-</div>
 
 {% endblock %}
 
