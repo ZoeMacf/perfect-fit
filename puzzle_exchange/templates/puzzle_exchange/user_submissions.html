@@ -1,5 +1,4 @@
-{% extends "base.html" %}
-{% load static %}
+{% extends 'base.html' %}
 
 {% block page_header %}
     <div class="container header-container">
@@ -11,48 +10,36 @@
 
 {% block content %}
 
-<div class="container-fluid">
-  <div class="row">
-    <div class="row">
-        <div class="col">
-        <div class=" table table-responsive-md rounded">
-          <table class="table table-striped">
-          <thead>
-            <tr>
-              <th scope="col"></th>
-              <th scope="col">User</th>
-              <th scope="col"></th>
-              <th scope="col">Date</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row"></th>
-              <td>USERNAME</td>
-              <td>USERNAME</td>
-              <td>USERNAME</td>
-            </tr>
-            <tr>
-              <th scope="row"></th>
-              <td>PUZZLE INFO</td>
-              <td>PUZZLE INFO</td>
-              <td>PUZZLE INFO</td>
-            </tr>
-            <tr>
-              <th scope="row"></th>
-              <td>DATE</td>
-              <td>DATE</td>
-              <td>DATE</td>
-            </tr>
-          </tbody>
-      </table>
-        </div>
-      </div>
-      
-      <div class="col-12 col-md-6 col-lg-4">
-          <div class="puzzle-details-container mb-5 mt-md-5">
-              
-            </div>
+<div class="row">
+  <div class="col-12 my-2 mb-2 p-1 text-center">
+    <h3 class="content-font">My Submissions</h3>
+  </div>
+</div>
 
-        
+<div class="row">
+  <div class="col">
+  <div class="table rounded my-x">
+    <table class=" table table-striped">
+    <thead>
+      <tr>
+        <th scope="col" class="content-font">User</th>
+        <th scope="col" class="content-font">Title</th>
+        <th scope="col" class="content-font">Date</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for user_puzzle in user_puzzles %}
+      <tr>
+        <td class="content-font">{{ user_puzzle.poster }}</td>
+        <td class="content-font">{{ puzzle.title }}</a></td>
+        <td class="content-font">{{ user_puzzle.submitted_on }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+</table>
+</div>
+</div>
+
+
+
 {% endblock %}

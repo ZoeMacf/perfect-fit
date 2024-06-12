@@ -32,7 +32,15 @@ def puzzle_detail(request, puzzle_id):
 def user_submissions(request):
     """ view to render a list of users submissions """
 
-    return render(request, 'puzzle_exchange/user_submissions.html')
+    puzzles = PuzzleExchange.objects.all()
+    user_puzzles = puzzles.filter(poster=request.user.userprofile)
+
+    template = 'puzzle_exchange/user_submissions.html'
+    context = {
+        'user_puzzles':user_puzzles
+    }
+
+    return render(request, template, context)
 
 def submit_puzzle(request):
     """ view to create a puzzle submit form """
