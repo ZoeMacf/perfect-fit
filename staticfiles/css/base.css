@@ -247,6 +247,18 @@ margin: 5px;
   object-fit: cover;
 }
 
+.puzzle-link {
+  text-decoration: none;
+  color: #191923;
+}
+
+.puzzle-link:hover {
+  background-color: #191923;
+  color: #FBFEF9;
+  padding: 2px;
+  border-radius: 5px;
+}
+
 
 /* footer styling */
 .social-media li {
