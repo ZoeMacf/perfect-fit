@@ -31,7 +31,7 @@
               <h3 class="mb-0 content-font">{{ puzzle.title }}</h3>
               <p class="mt-3 content-font">{{ puzzle.body }}</p>
               <div>
-                <a class="btn btn-dark content-font href="">Message User</a>
+                <a class="btn btn-dark content-font" href="{% url 'submit_message' %}">Message User</a>
               </div>
             </div>
 {% endblock %}
