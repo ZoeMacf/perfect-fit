@@ -2,23 +2,31 @@ from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.views import generic
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
+from django.core.paginator import Paginator
 
 from .models import PuzzleExchange
 from .forms import PuzzleExchangeForm
 
 
-
+@login_required
 def puzzles(request):
     """ A view to show all puzzles, also sorting and filtering queries """
 
     puzzles = PuzzleExchange.objects.all()
 
+    paginator = Paginator(puzzles, 3)
+
+    page_number = request.GET.get("page")
+    page_obj = paginator.get_page(page_number)
+
     context = {
         'puzzles': puzzles,
+        'page_obj': page_obj
     }
 
     return render(request, 'puzzle_exchange/puzzle_list.html', context)
 
+@login_required
 def puzzle_detail(request, puzzle_id):
     """ view to render a detailed post for puzzle submission """
 
@@ -29,6 +37,7 @@ def puzzle_detail(request, puzzle_id):
 
     return render(request, 'puzzle_exchange/puzzle_detail.html', context)
 
+@login_required
 def user_submissions(request):
     """ view to render a list of users submissions """
 
@@ -37,11 +46,12 @@ def user_submissions(request):
 
     template = 'puzzle_exchange/user_submissions.html'
     context = {
-        'user_puzzles':user_puzzles
+        'users_puzzles':user_puzzles
     }
 
     return render(request, template, context)
 
+@login_required
 def submit_puzzle(request):
     """ view to create a puzzle submit form """
 

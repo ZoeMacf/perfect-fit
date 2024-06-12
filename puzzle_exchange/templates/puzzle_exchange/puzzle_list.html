@@ -28,7 +28,7 @@
       </tr>
     </thead>
     <tbody>
-      {% for puzzle in puzzles %}
+      {% for puzzle in page_obj %}
       <tr>
         <td class="content-font">{{ puzzle.poster }}</td>
         <td class="content-font"><a class="puzzle-link" href="{% url 'puzzle_detail' puzzle.id %}">{{ puzzle.title }}</a></td>
@@ -37,6 +37,28 @@
       {% endfor %}
     </tbody>
 </table>
+
+<div class="row">
+  <div class="col-12">
+    <div class="pagination justify-content-center m-5 p-2">
+      <span class="step-links">
+          {% if page_obj.has_previous %}
+              <a class="page_btn" href="?page=1">&laquo; FIRST</a>
+              <a class="page_btn" href="?page={{ page_obj.previous_page_number }}">PREVIOUS</a>
+          {% endif %}
+
+          <span class="current content-font">
+              Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}
+          </span>
+
+          {% if page_obj.has_next %}
+              <a class="page_btn" href="?page={{ page_obj.next_page_number }}">NEXT</a>
+              <a class="page_btn" href="?page={{ page_obj.paginator.num_pages }}">LAST &raquo;</a>
+          {% endif %}
+      </span>
+    </div>
+  </div>
+</div>
 
   </div>
 </div>
