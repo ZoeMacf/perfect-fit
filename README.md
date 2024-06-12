@@ -241,6 +241,12 @@ The Newsletter model will be used as blog post where site admins can add posts w
 
 ## Agile Development
 
+[Perfect Fit Project Board](https://github.com/users/ZoeMacf/projects/5)
+
+This project was created using Agile methodology, this allowed for me to plan out what I wanted my application to do and how the user may wish to use it.  
+
+To easily group my User Stories into a more structured format I created six Epics:
+
 ### Initial Set Up
 
 The purpose of this Epic to help organise and create a structure for setting up the project. Beginning with creating the repository to deploying the first version of the application on Heroku
@@ -267,7 +273,17 @@ This Epic was designed to keep track of what needed to be done for the README.
 
 ### MoSCoW
 
+For this project the MoSCoW technique, (Must have, Should have, Could have, Won't have) was used for planning User Stories, it allowed me to prioritise what was essential to get the project working and ensure the best user experience. 
+
+It also allowed me to note what could be done/added in future implementations. 
+
 ### Kanban
+
+To help visualise the project and plan accordingly with a schedule I used the Kanban system, which was implemented through GitHub Projects. 
+
+Through the use of the board I was able to create categories of 'To Do' , 'In Progress' and 'Done'. With this I was able to see what was needed in the more essential parts of the project. 
+
+I also implemented 'Bugs' and 'Fixed' categories to keep track of any bugs which occurred in development and note when they had been fixed. 
 
 ## Features
 
