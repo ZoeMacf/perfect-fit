@@ -14,17 +14,17 @@ Users can also participate in a puzzle exchange with other users wherein they ca
     - [Site Styling](site-styling)
     - [Database Design](#database-design)
 * [Agile Development](#agile-development)
-- Features
-- Languages and Technologies
-    - Languages and Frameworks
-    - Packages
-    - Tools and Programs Used
-- Testing
-    - Code Validation
-    - Manual Testing
-- Deployment
-- Content
-- Credits
+- [Features](#features)
+- [Languages and Technologies](#languages-and-technologies)
+    - [Languages and Frameworks](#languages-and-frameworks)
+    - [Packages](#packages)
+    - [Tools and Programs Used](#tools-and-programs-used)
+- [Testing](#testing)
+    - [Code Validation](#code-validation)
+    - [Manual Testing](#manual-testing)
+- [Deployment](#deployment)
+- [Content](#content)
+- [Credits](#credits)
 
 ## User Experience
 
