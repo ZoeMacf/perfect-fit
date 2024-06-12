@@ -152,7 +152,7 @@ def add_review(request, product_id):
   """ add a review to product"""
   product = get_object_or_404(Product, pk=product_id)
   if request.method == 'POST':
-    form = ReviewForm(request.POST, request.FILES)
+    form = ReviewForm(request.POST)
     if form.is_valid():
         review = form.save(commit=False)
         review.author = request.user.userprofile
