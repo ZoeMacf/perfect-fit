@@ -70,9 +70,10 @@ def product_detail(request, product_id):
     """ A view for an individual product information """
 
     product = get_object_or_404(Product, pk=product_id)
-
+    reviews = Reviews.objects.filter(product=product)
     context = {
         'product': product,
+        'reviews': reviews
     }
 
     return render(request, 'products/product_detail.html', context)
@@ -146,12 +147,10 @@ def delete_product(request, product_id):
     messages.success(request, 'Product deleted!')
     return redirect(reverse('products'))
     
-@login_required
+
 def add_review(request, product_id):
   """ add a review to product"""
   product = get_object_or_404(Product, pk=product_id)
-  reviews = Reviews.objects.all().order_by('-created_on')
-  
   if request.method == 'POST':
     form = ReviewForm(request.POST, request.FILES)
     if form.is_valid():
@@ -170,7 +169,6 @@ def add_review(request, product_id):
     context  = {
     'form': form,
     'product':product,
-    'reviews':reviews
     }
 
     return render(request, template, context)

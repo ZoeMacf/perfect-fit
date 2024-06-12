@@ -99,26 +99,22 @@
               </form>
             </div>
 
-            <div class=" row review">
+            <div class="row">
                 {% if reviews %}
-                <h5 class="my-2">Reviews:</h5>
+                <h5 class="my-2 content-font">Reviews:</h5>
+                <div class="col-12">
                 {% for review in reviews %}
-                <div class="col-12 col-md-8">
-                    <div class="card mb-3">
-                        <div class="card-body">
-                            <div class="user-info d-flex">
-                                <img src="{% static 'images/authors/default-author.png' %}" class="user-image"
-                                    alt="default user image">
-                                <div class="user-rating">
-                                    <h6 class="ms-2">{{ review.author }}</h6>
-                            
-                                </div>
-                            </div>
-                            <small>{{ review.created_on }}</small>
-                            <hr>
-                            <p class="card-text">{{ review.review_body }}</p>
-                        {% endfor %}
-                        {% endif %}
+                <div class="card border-dark mb-3" style="max-width: 18rem;">
+                    <div class="card-header content-font">{{ review.author }}</div>
+                    <div class="card-body text-dark content-font">
+                      <h6 class="card-title content-font">Reviewed on: {{ review.created_on }}</h5>
+                      <p class="card-text content-font">{{ review.review_body }}.</p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+                {% endfor %}
+                {% endif %}
 {% endblock %}
 
 {% block postloadjs %}
