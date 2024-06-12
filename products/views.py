@@ -150,7 +150,8 @@ def delete_product(request, product_id):
 def add_review(request, product_id):
   """ add a review to product"""
   product = get_object_or_404(Product, pk=product_id)
-  reviews = ProductReview.objects.all().order_by('-created')
+  reviews = Reviews.objects.all().order_by('-created_on')
+  
   if request.method == 'POST':
     form = ReviewForm(request.POST, request.FILES)
     if form.is_valid():

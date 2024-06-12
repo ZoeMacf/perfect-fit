@@ -98,9 +98,27 @@
                 {% endif %}
               </form>
             </div>
-        </div>
-    </div>
 
+            <div class=" row review">
+                {% if reviews %}
+                <h5 class="my-2">Reviews:</h5>
+                {% for review in reviews %}
+                <div class="col-12 col-md-8">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <div class="user-info d-flex">
+                                <img src="{% static 'images/authors/default-author.png' %}" class="user-image"
+                                    alt="default user image">
+                                <div class="user-rating">
+                                    <h6 class="ms-2">{{ review.author }}</h6>
+                            
+                                </div>
+                            </div>
+                            <small>{{ review.created_on }}</small>
+                            <hr>
+                            <p class="card-text">{{ review.review_body }}</p>
+                        {% endfor %}
+                        {% endif %}
 {% endblock %}
 
 {% block postloadjs %}
