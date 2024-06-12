@@ -348,6 +348,18 @@ The following packages were installed throughout the development.
 
 ## Deployment
 
+For this project the application was deployed to Heroku using the following steps:
+
+1. I logged into my Heroku account and navigated to the dashboard. 
+2. From here I clicked 'New' and created a new app.
+3. perfect-fit was chosen as the app name and region set to EU, finally I clicked 'Create app'
+4. In the 'Settings' tab and from here I located the section 'Config Vars' and clicked 'Reveal Config Vars'
+5. From here you can add your environment variables for your Database, Secret Key, CollecStatic, Cloudinary Database, Stripe Public Key, Stripe Private Key and Webhook Secret. 
+6. After this has been done navigate to the 'Deploy' tab and under 'Deployment Method' click on 'GitHub'.
+7. Locate the repository from GitHub and paste the link here and click 'Connect'.
+8. Ensure that the selected branch is 'main branch' before clicking to Deploy. 
+9. Once the build is finished there should be a message saying 'Your app was successfully deployed' with a 'View' button.
+
 ### Site Content
 
 #### Images
