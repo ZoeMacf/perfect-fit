@@ -314,6 +314,19 @@ When the user is signed in the following is instead displayed:
 
 <img src="./documentation/features/navbar2.PNG">
 
+### Products Page
+
+From here all of the products can be viewed as a paginated list with five items per page, the user can also choose to sort by low to high price, low to high rating or even alphabetically. 
+
+There is also a scroll to top feature at the bottom of the page.
+
+<img src="./documentation/features/products_1.PNG">
+
+<img src="./documentation/features/products_2.PNG">
+
+<img src="./documentation/features/product_detail2.PNG">
+
+
 ### Product Details Page
 
 On this page the user is shown the product image, title and description. The user can also select a quantity of the item and add it to their bag, there is also an option to go back to the all products page. 
