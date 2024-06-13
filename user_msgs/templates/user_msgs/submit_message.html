@@ -23,11 +23,14 @@
 
         <div class="row">
           <div class="col-12 col-md-6">
-            <form action="{% url 'submit_message' %}" method="POST">
+            <form method="POST" action="{% url 'submit_message' puzzle.id %}" class="form mb-2 content-font" enctype="multipart/form-data">
                 {% csrf_token %}
-                <input type="hidden" name="receiver_id" value="{{ receiver.id }}" />
-                <input type="file" name="file" />
-            </form>
+                {{ form|crispy }}
+                <div class="text-right">
+                  <a class="btn btn-dark rounded content-font mt-2" href="{% url 'puzzles' %}">Cancel</a>
+                  <button class="btn btn-dark rounded content-font mt-2" type="submit">Submit Message</button>
+                </div>
+              </form>
           </div>
         </div>
     </div>
