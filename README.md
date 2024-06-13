@@ -287,6 +287,78 @@ I also implemented 'Bugs' and 'Fixed' categories to keep track of any bugs which
 
 ## Features
 
+### Navbar
+
+The navbar was created using Bootstrap in order to ensure responsiveness across multiple viewports. For this project Bootstrap 4 was used due to various jQuery functions used, I had initially begun development with Bootstrap 5 but was unable to get Toast Notifications to work.
+
+When a user is not signed in the navbar will display the following:
+
+- All Products
+- Puzzles
+- FAQ
+- About Us
+
+When the user is signed in the following is instead displayed:
+
+- All Products
+- Puzzles
+- Puzzle Exchange
+- FAQ
+- About Us
+
+#### Navbar Signed out
+
+<img src="./documentation/features/navbar1.PNG">
+
+#### Navbar Signed In
+
+<img src="./documentation/features/navbar2.PNG">
+
+### Product Details Page
+
+On this page the user is shown the product image, title and description. The user can also select a quantity of the item and add it to their bag, there is also an option to go back to the all products page. 
+
+If a user is logged in there is an option to leave a review of the item. If the user is not logged in they can only see the reviews. 
+
+#### Logged Out Product Details - Non reviewd item
+
+<img src="./documentation/features/product_detail1.PNG">
+
+#### Logged In Product Details - Non reviewd item
+
+<img src="./documentation/features/product_detail2.PNG">
+
+#### Product Details - Reviewed Item
+
+<img src="./documentation/features/Product_detail3.PNG">
+
+### Shopping Bag Page
+
+### Checkout Page
+
+### Checkout Success Page
+
+### User Profile Page
+
+### Puzzle Exchange List
+
+On this page the user can see a paginated list of all of the submitted puzzles for the exchange. By clicking on the title of the puzzle they are brought to a more detailed page. 
+
+<img src="./documentation/features/puzzle_exchange_list.PNG">
+
+### Puzzle Exchange Puzzle Detail
+
+### Puzzle Exchange User Submissions
+
+### FAQ Page
+
+### About Us Page
+
+On this page the user can learn more about Perfect Fit
+
+<img src="./documentation/features/about_us.PNG">
+
+
 ## Languages and Technologies
 
 ### Languages and Frameworks
