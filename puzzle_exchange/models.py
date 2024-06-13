@@ -12,4 +12,4 @@ class PuzzleExchange(models.Model):
  image = CloudinaryField("image", default="placeholder")
 
  def __str__(self):
-          return f"{self.title}"
+        return f" {self.title} submitted by {self.poster}"

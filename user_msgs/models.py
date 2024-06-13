@@ -8,3 +8,6 @@ class UserMessage(models.Model):
      reciever = models.ManyToManyField(UserProfile, related_name='reciever')
      msg_content = models.TextField()
      created_at = models.DateTimeField(auto_now=True)
+
+     def __str__(self):
+        return f"Message from {self.sender}"
