@@ -11,4 +11,4 @@ class SubmitMessageView(View):
         receiver_id = request.POST.get('receiver_id', '')
         file = request.FILES.get('file', '')
         UserMessage.objects.create(sender=request.user, receiver__id=receiver_id, message_file=file)
-        return render(request,)
+        return render(request, 'success.html', {})
