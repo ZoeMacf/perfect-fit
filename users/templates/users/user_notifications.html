@@ -1,6 +1,10 @@
 {% extends "base.html" %}
 {% load static %}
 
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'checkout/css/checkout.css' %}">
+{% endblock %}
+
 {% block page_header %}
     <div class="container header-container">
         <div class="row">
@@ -10,29 +14,30 @@
 {% endblock %}
 
 {% block content %}
-    <div class="container">
+<div class="container">
+  <div class="row">
+      <div class="col">
+          <hr>
+          <h2 class="content-font mb-4 text-uppercase content-font">Notifications</h2>
+          <hr>
+          <p class="content-font">You can find all of your Puzzle Exchange notifications here</p>
+      </div>
+  </div>
+
+  <div class="row">
+    <div class="col-12 col-lg-7">
+      <div class="p-2">
         <div class="row">
-            <div class="col">
-                <hr>
-                <h2 class="content-font mb-4">My Profile</h2>
-                <small class="content-font text-muted">Puzzle Exchange Notifications</small>
-                <hr>
-            </div>
-        </div> 
-        <div class="row">
-            <div class="col-12 col-lg-6">
-               
-            </div>
-            <div class="col-12 col-lg-6">
-                <p class="text-muted content-font">Notifications</p>
-                    <ul>
-                        {% for user_message in user_messages %}
-                        <li class="content-font">Message from: {{ user_message.sender }}</li>
-                        <li class="content-font">Message content: {{ user_message.msg_content }}</li>
-                        {% endfor %}
-                    </ul>
-                </div>
-            </div>
+            <ul class="list-group">
+            {% for user_message in user_messages %}
+            <li class="list-group-item">
+              <a class="message-notifications"href=""><strong>Message from: </strong>{{ user_message.sender }}</a>
+            </li>
+            {% endfor %}
+        </ul>
         </div>
-        </div>
+
+    </div>
+</div>
+</div>
 {% endblock %}

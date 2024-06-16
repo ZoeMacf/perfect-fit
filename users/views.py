@@ -58,7 +58,6 @@ def user_notifications(request):
   all_messages = UserMessage.objects.all()
   user_messages = all_messages.filter(message_receiver=request.user.userprofile)
   message_receiver = request.user.userprofile
-# sender = all_messages.filter(sender=UserMessage.sender.id)
 
   template = 'users/user_notifications.html'
   context = {
