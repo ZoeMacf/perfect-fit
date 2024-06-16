@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <hr>
+                <h2 class="content-font mb-4">Contact Us</h2>
+                <h5 class="text-muted content-font">Please submit your query below</h5>
+                <hr>
+            </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <form method="POST" action="{% url 'contact_us' %}" class="form mb-2 content-font" enctype="multipart/form-data">
+                {% csrf_token %}
+                {{ form|crispy }}
+                <div class="text-right">
+                  <a class="btn btn-dark rounded content-font mt-2" href="{% url 'home' %}">Cancel</a>
+                  <button class="btn btn-dark rounded content-font mt-2" type="submit">Send</button>
+                </div>
+              </form>
+          </div>
+        </div>
+    </div>
+
+{% endblock %}

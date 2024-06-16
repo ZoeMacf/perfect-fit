@@ -9,6 +9,7 @@ from .forms import UserMessageForm
 
 @login_required
 def submit_message(request, puzzle_id):
+    """ view to submit a message to puzzle exchange poster"""
 
     puzzle = get_object_or_404(PuzzleExchange, pk=puzzle_id)
 
