@@ -18,7 +18,7 @@ def submit_message(request, puzzle_id):
         if form.is_valid():
             message = form.save(commit=False)
             message.sender = request.user.userprofile
-            message.receiver = puzzle.poster.user.userprofile
+            message.receiver = puzzle.poster.user
             message = form.save()
             messages.success(request, f'Successfully sent your message to {puzzle.poster}!')
             return redirect(reverse('message_success', args=[puzzle.id]))

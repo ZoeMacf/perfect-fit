@@ -6,6 +6,9 @@ from django.contrib.auth.decorators import login_required
 from .models import UserProfile
 from .forms import UserProfileForm
 
+from user_msgs.models import UserMessage
+from puzzle_exchange.models import PuzzleExchange
+
 from checkout.models import Order
 
 @login_required
@@ -36,6 +39,7 @@ def user_profile(request):
 
 @login_required
 def order_detail(request, order_number):
+  """ display users order in detail """
 
   order = get_object_or_404(Order, order_number=order_number)
 
@@ -45,3 +49,23 @@ def order_detail(request, order_number):
   }
 
   return render(request, template, context)
+
+
+@login_required
+def user_notifications(request):
+  """" view to show all of the user notifications """
+
+  all_messages = UserMessage.objects.all()
+  user_messages = all_messages.filter(receiver=request.user.userprofile)
+  receiver = request.user.userprofile
+# sender = all_messages.filter(sender=UserMessage.sender.id)
+
+  template = 'users/user_notifications.html'
+  context = {
+    'all_messages': all_messages,
+    'user_messages':user_messages
+  }
+
+  return render(request, template, context)
+
+
