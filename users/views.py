@@ -7,6 +7,7 @@ from .models import UserProfile
 from .forms import UserProfileForm
 
 from user_msgs.models import UserMessage
+from user_msgs.forms import UserMessageForm
 from puzzle_exchange.models import PuzzleExchange
 
 from checkout.models import Order
@@ -66,5 +67,3 @@ def user_notifications(request):
   }
 
   return render(request, template, context)
-
-

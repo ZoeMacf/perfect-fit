@@ -1,10 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
 
-{% block extra_css %}
-    <link rel="stylesheet" href="{% static 'checkout/css/checkout.css' %}">
-{% endblock %}
-
 {% block page_header %}
     <div class="container header-container">
         <div class="row">
@@ -31,8 +27,10 @@
             <ul class="list-group">
             {% for user_message in user_messages %}
             <li class="list-group-item">
-              <a class="message-notifications"href=""><strong>Message from: </strong>{{ user_message.sender }}</a>
+              <h6 class="content-font"><strong>Message from: </strong>{{ user_message.sender }}</h6>
+              <h6 class="content-font">Message: {{ user_message.msg_content }}</h6>
             </li>
+            <hr class="border-0">
             {% endfor %}
         </ul>
         </div>
