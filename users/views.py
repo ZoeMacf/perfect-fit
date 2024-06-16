@@ -56,8 +56,8 @@ def user_notifications(request):
   """" view to show all of the user notifications """
 
   all_messages = UserMessage.objects.all()
-  user_messages = all_messages.filter(receiver=request.user.userprofile)
-  receiver = request.user.userprofile
+  user_messages = all_messages.filter(message_receiver=request.user.userprofile)
+  message_receiver = request.user.userprofile
 # sender = all_messages.filter(sender=UserMessage.sender.id)
 
   template = 'users/user_notifications.html'

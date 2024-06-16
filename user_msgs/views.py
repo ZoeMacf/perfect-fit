@@ -1,7 +1,6 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
-from django.views.generic import View
 
 from .models import UserMessage
 from puzzle_exchange.models import PuzzleExchange
@@ -18,8 +17,8 @@ def submit_message(request, puzzle_id):
         if form.is_valid():
             message = form.save(commit=False)
             message.sender = request.user.userprofile
-            message.receiver = puzzle.poster.user
             message = form.save()
+            message.message_receiver.add(puzzle.poster.user.userprofile)
             messages.success(request, f'Successfully sent your message to {puzzle.poster}!')
             return redirect(reverse('message_success', args=[puzzle.id]))
         else:

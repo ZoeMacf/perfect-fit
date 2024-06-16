@@ -5,7 +5,7 @@ from users.models import UserProfile
 
 class UserMessage(models.Model):
      sender = models.ForeignKey(UserProfile, on_delete=models.CASCADE, related_name='sender')
-     receiver = models.ManyToManyField(UserProfile, related_name='receiver')
+     message_receiver = models.ManyToManyField(UserProfile, related_name='message_receiver', null=True)
      msg_content = models.TextField()
      created_at = models.DateTimeField(auto_now=True)
 
