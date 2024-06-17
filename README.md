@@ -445,6 +445,24 @@ The following packages were installed throughout the development.
 
 ### Manual Testing
 
+| Feature Tested  | Outcome  | Test Performed  | Result  | Pass/Fail  |
+|---|---|---|---|---|
+| `Navigation`  |   |   |   |   |
+|  All Products - 500 Pieces Link  | Display all products in the category '500 Pieces' | Click on 'All Products' dropdown and select '500 Pieces' link.  | Products page is displayed and filtered to only show puzzles that match category.  | Pass  |
+|  All Products - 1000 Pieces Link  | Display all products in the category '1000 Pieces' | Click on 'All Products' dropdown and select '1000 Pieces' link.  | Products page is displayed and filtered to only show puzzles that match category.  | Pass  |
+|  All Products - 1500 Pieces Link  | Display all products in the category '1500 Pieces' | Click on 'All Products' dropdown and select '1500 Pieces' link.  | Products page is displayed and filtered to only show puzzles that match category.  | Pass  |
+|  All Products - Wooden Jigsaw Puzzles Link  | Display all products in the category 'Wooden Jigsaw Puzzles' | Click on 'All Products' dropdown and select 'Wooden Jigsaw Puzzles' link.  | Products page is displayed and filtered to only show puzzles that match category.  | Pass  |
+|  All Products - 4 in a Box Link  | Display all products in the category '4 in a Box'  | Click on 'All Products' dropdown and select '4 in a Box'  | Products page is displayed and filtered to only show puzzles that match category.  | Pass |
+|  All Products - Accessories Link  | Display all products in the category 'Accessories'   | Click on 'All Products' dropdown and select 'Accessories'  | Products page is displayed and filtered to only show puzzles that match category.  | Pass |
+|  Puzzle Exchange - All Submissions Link |Direct logged in users to a page showing all of the puzzles that have been submitted to the Puzzle Exchange | Once logged in click on the 'Puzzle Exchange' dropdown and select 'All Submissions' | All Submissions page is displayed showing a table of puzzle submissions.  | Pass |
+|  Puzzle Exchange - My Submissions Link |    |   |   |  |
+|  FAQ Link | Directs the user to a page with a list of Frequently Asked Questions   | Click on the FAQ link on navbar | FAQ page is displayed with list of questions.  | Pass |
+|  About Us Link | Directs user to a page with more information about Perfect Fit   | Click on the About Us link on the navbar  | About Us page is displayed with further information on Perfect Fit  | Pass  |
+|  `Footer` |   |   |   |   |
+|  Instagram Link | When the link is clicked it open a link to Instagram in a new tab  |  Click on 'Instagram' icon | A new tab opens and directs to Instagram  | Pass |
+| YouTube Link  | When the link is clicked it open a link to YouTube in a new tab  | Click on 'YouTube' icon  |  A new tab opens and directs to YouTube | Pass  |
+|  Facebook Link | When the link is clicked it open a link to Facebook in a new tab  | Click on 'Facebook' icon  | A new tab opens and directs to Facebook  | Pass  |
+
 ## Bugs
 
 ## Deployment
