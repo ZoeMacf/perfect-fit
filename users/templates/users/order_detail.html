@@ -18,9 +18,9 @@
   <div class="row">
       <div class="col">
           <hr>
-          <h2 class="content-font mb-4 text-uppercase content-font">Thank You</h2>
+          <h2 class="content-font mb-4 text-uppercase content-font">Your order {{ order.order_number }}</h2>
           <hr>
-          <p class="content-font">Your order information is below. A confirmation email will be sent to <strong>{{ order.email }}</strong></p>
+          <p class="content-font">This is a previous order, a confirmation email was sent to <strong>{{ order.email }}</strong></p>
       </div>
   </div>
 
@@ -185,6 +185,16 @@
                 <p class="mb-0">{{ order.grand_total }}</p>
             </div>
         </div>
+    </div>
+
+    <div class="col-12 col-lg-7 text-right content-font mt-5">
+            <a href="{% url 'user_profile' %}" class="btn btn-dark rounded my-2">
+                <span class="icon">
+                    <i class="fas fa-chevron-left"></i>
+                </span>
+            <span class="text-uppercase content-font">Back to Profile</span>
+        </a>
+      </div>
     </div>
 </div>
 </div>

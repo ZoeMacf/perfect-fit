@@ -445,9 +445,10 @@ The following packages were installed throughout the development.
 
 ### Manual Testing
 
+### Navigation
+
 | Feature Tested  | Outcome  | Test Performed  | Result  | Pass/Fail  |
 |---|---|---|---|---|
-| `Navigation`  |   |   |   |   |
 |  All Products - 500 Pieces Link  | Display all products in the category '500 Pieces' | Click on 'All Products' dropdown and select '500 Pieces' link.  | Products page is displayed and filtered to only show puzzles that match category.  | Pass  |
 |  All Products - 1000 Pieces Link  | Display all products in the category '1000 Pieces' | Click on 'All Products' dropdown and select '1000 Pieces' link.  | Products page is displayed and filtered to only show puzzles that match category.  | Pass  |
 |  All Products - 1500 Pieces Link  | Display all products in the category '1500 Pieces' | Click on 'All Products' dropdown and select '1500 Pieces' link.  | Products page is displayed and filtered to only show puzzles that match category.  | Pass  |
@@ -458,10 +459,37 @@ The following packages were installed throughout the development.
 |  Puzzle Exchange - My Submissions Link |    |   |   |  |
 |  FAQ Link | Directs the user to a page with a list of Frequently Asked Questions   | Click on the FAQ link on navbar | FAQ page is displayed with list of questions.  | Pass |
 |  About Us Link | Directs user to a page with more information about Perfect Fit   | Click on the About Us link on the navbar  | About Us page is displayed with further information on Perfect Fit  | Pass  |
-|  `Footer` |   |   |   |   |
-|  Instagram Link | When the link is clicked it open a link to Instagram in a new tab  |  Click on 'Instagram' icon | A new tab opens and directs to Instagram  | Pass |
-| YouTube Link  | When the link is clicked it open a link to YouTube in a new tab  | Click on 'YouTube' icon  |  A new tab opens and directs to YouTube | Pass  |
-|  Facebook Link | When the link is clicked it open a link to Facebook in a new tab  | Click on 'Facebook' icon  | A new tab opens and directs to Facebook  | Pass  |
+
+### Products
+
+| Feature Tested  | Outcome  | Test Performed  | Result  | Pass/Fail  |
+|---|---|---|---|---|
+|  All Products - Pagination  | Only 5 products must be displayed at a time, button to click next page should be visible and previous if next has been clicked. | View the All Products page and confirm only 5 products are visible max, test pagination buttons.  | Products page is displayed with a max of 5 products and the respective buttons appear for page navigation  | Pass  |
+|  All Products - Sorting  | Products can be sorted by price, rating and alphabetical order | View the All Products page using the selector filter the products  by each category.  | Products are filtered into ascending and descending order for price, rating and alphabetical order  | Pass  |
+|  Product Detail - Add to bag  | Once on a product page it can be added to the basket and a notification is displayed to advise it was successful | Select a product from the all products page and click the 'Add to Bag' button.  | Product is successfully added to the bag and a notification displays advising that it has been added along with the product details.  | Pass  |
+|  Product Detail - Select Quantity  | Once on a product page the quantity can be selected using the plus and minus buttons | Select a product from the all products page and choose a quantity before adding to the basket.  | The correct quantity of the product is added to the bag and a notification displays advising that it has been added, quantiy is also displayed.  | Pass  |
+|  Product Detail - Leave a Review  | Once on a product page click the 'Add Review' button so submit a review. | When the button is clicked the user should be directed to a separate page with a form to submit the review. | After clicking the 'Leave a Review' button a page with a form is displayed, on completion of the review it is then displayed on the product page. | Pass  |
+|  Product Detail - Return to all Products  | Go back to the products page from product detail page | Once on a product page click the 'Keep Shopping' button to go back to the products page. | After clicking the button the all products view is displayed | Pass  |
+
+### Shopping Bag
+
+| Feature Tested  | Outcome  | Test Performed  | Result  | Pass/Fail  |
+|---|---|---|---|---|
+|  Shopping Bag - Display products  | View all bag contents |  Navigate to the shopping bag page to view all contents of bag.| All of the products in the bag are visible on the Shopping Bag page, product name, image and quantity.  | Pass  |
+|  Shopping Bag - Update bag  | Update the contents and quantity of the shopping bag. |  On the shopping bag page, the bag can be updated through changing the quantity or removing an item| Using the selectors beside each product, reduce the quantity of one item and delete another.  | Pass  |
+|  Shopping Bag - View Totals  | The bag total, delivery and grand total should be visible | When on the shopping bag page, navigate to the bottom of the bag and review the bag total, delivery and grand total| The correct amounts for bag total, delivery and grand total are displayed.  | Pass  |
+
+### Checkout Page
+| Feature Tested  | Outcome  | Test Performed  | Result  | Pass/Fail  |
+|---|---|---|---|---|
+|  Checkout Page - Order Summary  | When on the checkout page an order summary must be visible | Using the 'Secure Checkout' button navigate to the checkout page. | To the right of the delivery information input a summary of the order is visible  | Pass  |
+|  Checkout Page - Complete an order with Stripe  | Order should sucessfully complete using stripe payment processor | Fill out delivery details and stripe test card information | Order is completed and a confirmation is displayed to the page  | Pass  |
+
+### User Profile Page
+| Feature Tested  | Outcome  | Test Performed  | Result  | Pass/Fail  |
+|---|---|---|---|---|
+|  User Profile Page - Update Delivery Information | Delivery information can be updated through a form on user profile page | Fill out new delivery details and submit form | A notification is displayed and the information is updated.  | Pass  |
+|  User Profile Page - Order History | Previous orders can be viewed | On profile page navigated to the order history table and select an order using the order number  | After selecting an order a page is displayed showing the order information. |Pass  |
 
 ## Bugs
 
