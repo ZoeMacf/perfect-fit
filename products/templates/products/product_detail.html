@@ -102,20 +102,23 @@
             <hr class="border-2 mt-5">
             <div class="row">
                 {% if reviews %}
-                <h5 class="my-2 content-font">Reviews:</h5>
-                <div class="container-fluid col-12">
-                {% for review in reviews %}
-                <div class="card border-dark mb-3" style="max-width: 30rem;">
-                    <div class="card-header content-font">{{ review.author }}</div>
-                    <div class="card-body text-dark content-font">
-                      <h6 class="card-title content-font">Reviewed on: {{ review.created_on }}</h5>
-                      <p class="card-text content-font">{{ review.review_body }}.</p>
+                <div class="col-12 col-lg-7">
+                  <div class="p-2">
+                        <ul class="list-group">
+                        {% for review in reviews %}
+                        <li class="list-group-item review card border-dark" style="max-width: 40rem;">
+                          <h6 class="content-font card-header border-dark"><strong>Reviewed by: </strong>{{ review.author }}</h6>
+                          <p class="content-font card-body text-dark">{{ review.review_body }}</p>
+                          <hr class="border-0">
+                          <p class="content-font card-body text-dark">Submitted on: {{ review.created_on }}</p>
+                        </li>
+                        <hr class="border-0">
+                        {% endfor %}
+                    </ul>
                     </div>
-                  </div>
+                    {% endif %}
                 </div>
-            </div>
-                {% endfor %}
-                {% endif %}
+                </div>
 {% endblock %}
 
 {% block postloadjs %}

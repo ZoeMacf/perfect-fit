@@ -203,8 +203,6 @@ margin: 5px;
   border-radius: 0;
 }
 
-
-
 /* shopping bag */
 
 .update_link {
@@ -255,20 +253,6 @@ margin: 5px;
 }
 
 .puzzle-link:hover {
-  background-color: #191923;
-  color: #FBFEF9;
-  padding: 2px;
-  border-radius: 5px;
-}
-
-/* User Notifications */
-
-.message-notifications {
-  text-decoration: none;
-  color: #191923;
-}
-
-.message-notifications:hover {
   background-color: #191923;
   color: #FBFEF9;
   padding: 2px;
