@@ -14,7 +14,7 @@ def contact_us(request):
         form = ContactUsForm(request.POST)
         if form.is_valid():
             query = form.save()
-            confirm_query(request.user)
+            confirm_query(request)
             return redirct(reverse('contact_success'))
         else:
             messages.error(request, 'Failed to send query, please ensure the form is valid.')
