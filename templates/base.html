@@ -34,8 +34,8 @@
   
   <title>Perfect Fit {% block extra_title %}{% endblock %}</title>
 </head>
-<body>
-
+<body class="d-flex">
+  <main class="flex-grow-1">
   <header class="container-fluid">
     <div class="row text-center">
       <div class="col delivery-banner text-white">
@@ -130,6 +130,49 @@
 
   {% block content %}
   {% endblock %}
+  </main>
+
+  {% load static %}
+<footer class="my-2">
+  <div class="container-fluid footer-style mt-5">
+    <div class="row">
+      <div class="col-12 text-center py-2">
+        <h4 class="content-font">Further Information</h4>
+      </div>
+      <div class="col-3 text-left social-media">
+        <ul>
+          <li class="my-2">
+            <a href="https://facebook.com" target="_blank" rel="noopener"
+                aria-label="Visit Perfect Fit Facebook page (will open in a new tab)">
+                <i class="fa-brands fa-facebook fa-2xl"></i></a>
+              </li>
+              <hr class="border-0">
+              <li class="my-2">
+                  <a href="https://youtube.com" target="_blank" rel="noopener"
+                      aria-label="Visit Perfect Fit YouTube page (will open in a new tab)">
+                      <i class="fa-brands fa-youtube fa-2xl"></i></a>
+              </li>
+              <hr class="border-0">
+              <li class="my-2">
+                  <a href="https://instagram.com" target="_blank" rel="noopener"
+                      aria-label="Visit Perfect Fit Instagram page (will open in a new tab)">
+                      <i class="fa-brands fa-instagram fa-2xl"></i></a>
+              </li>
+              <hr class="border-0">
+            </ul>
+          </div>
+          <div class="col further-information">
+            <div class="col further-information">
+              <ul>
+                <li class="my-2 footer-link content-font hover-underline-animation"><a href="{% url 'about_us' %}">About Us</a></li>
+                <hr class="border-0">
+                <li class="my-2 footer-link content-font hover-underline-animation"><a href="{% url 'faq' %}">FAQ</a></li>
+                <hr class="border-0">
+                <li class="my-2 footer-link content-font hover-underline-animation"><a href="{% url 'contact_us' %}">Contact Us</a></li>
+                <hr class="border-0">
+              </ul>
+            </div>
+        
 
   {% block postloadjs %}
   <script type="text/javascript">
@@ -137,6 +180,5 @@
 </script>
   {% endblock %}
 
-{% include 'includes/footer.html' %}
 </body>
 </html>
