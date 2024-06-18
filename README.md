@@ -239,6 +239,10 @@ The Message model will be used to allow users to message each other in regards t
 
 The Newsletter model will be used as blog post where site admins can add posts with updates for the overall site and also to announce any in person meetups for puzzle exchange or competitions. 
 
+#### Contact Us Model
+
+During development a Contact Us model was created in order to allow users to reach out to Perfect Fit with any queries. 
+
 ## Agile Development
 
 [Perfect Fit Project Board](https://github.com/users/ZoeMacf/projects/5)
@@ -398,6 +402,12 @@ From here a user can see more detail on a puzzle and if they wish to trade, they
 
 <img src="./documentation/features/puzzle_detail.PNG">
 
+### Puzzle Exchange Submit a Puzzle
+
+On this page a user can fill out a form to submit their own puzzle to the Puzzle Exchange.
+
+<img src="./documentation/features/submit_puzzle.PNG">
+
 ### Puzzle Exchange User Submissions
 
 ### Send Message
@@ -553,6 +563,7 @@ The following packages were installed throughout the development.
 | Feature Tested  | Outcome  | Test Performed  | Result  | Pass/Fail  |
 |---|---|---|---|---|
 |  Puzzle Exchange - Puzzle List | All of the submitted puzzles can be viewed here with pagination | Click on the 'All Submissions' link on the 'Puzzle Exchange' dropdown | A list of puzzles is displayed, the title of the puzzles can be clicked to go to the more detailed page for the puzzle. | Pass  |
+|  Puzzle Exchange - Submit Puzzle | Submit a puzzle to trade with other users | On the Puzzle List page click the 'Submit a Puzzle' button and fill out the form. | Puzzle is added to the database and the user is directed to the detailed page for their submission. | Pass  |
 |  Puzzle Exchange - Puzzle Detail | View more information on puzzle | Click on the 'Disney Heroes' puzzle link. | Further information on the puzzle is displayed. | Pass  |
 |  Puzzle Exchange - Send Message | Send a message to user that posted the puzzle | Click on the 'Submit Message' button and fill out the form. | Message is sent to the user and a message is displayed to the screen advising. | Pass  |
 
