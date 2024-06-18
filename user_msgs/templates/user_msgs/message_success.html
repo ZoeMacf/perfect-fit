@@ -19,4 +19,15 @@
                 <p class="content-font">Your message has been successfully sent to {{ puzzle.poster }}, they will be notified shortly!</p>
             </div>
         </div>
+
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <a href="{% url 'puzzles' %}" class="btn btn-dark rounded-2 content-font mt-5">
+                    <span class="icon">
+                        <i class="fas fa-chevron-left"></i>
+                    </span>
+                    <span class="text-uppercase">Return to Puzzle Exchange</span>
+                </a>
+            </div>
+          </div>
 {% endblock %}
