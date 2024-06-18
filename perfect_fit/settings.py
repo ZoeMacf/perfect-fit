@@ -29,7 +29,7 @@ if os.path.exists("env.py"):
 SECRET_KEY = os.environ.get("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 ALLOWED_HOSTS = ['8000-zoemacf-perfectfit-myjy0wrtjrs.ws-eu114.gitpod.io', '8000-zoemacf-perfectfit-7tvc3m32sdk.ws.codeinstitute-ide.net', '.herokuapp.com']
 
 
@@ -197,7 +197,6 @@ STRIPE_SECRET_KEY = os.environ.get('STRIPE_SECRET_KEY', '')
 STRIPE_WH_SECRET = os.environ.get('STRIPE_WH_SECRET', '')
 
 if 'DEVELOPMENT' in os.environ:
-    print('BACKEND EMAILS IN ACTION')
     EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
     DEFAULT_FROM_EMAIL = 'perfectfit@example.com'
 else:
