@@ -320,6 +320,8 @@ From here all of the products can be viewed as a paginated list with five items 
 
 There is also a scroll to top feature at the bottom of the page.
 
+Authenticated Super Users are able to edit and remove products from the database through an edit/delete link below the product image.
+
 <img src="./documentation/features/products_1.PNG">
 
 <img src="./documentation/features/products_2.PNG">
@@ -347,11 +349,42 @@ If a user is logged in there is an option to leave a review of the item. If the 
 
 ### Shopping Bag Page
 
+On this page the user can see the contents of their shopping bag. This includes the name, price and quantity of the product. 
+
+From here they can also adjust their bag through quantity selectors and an update/delete buttons.
+
+<img src="./documentation/features/shopping_bag_page.PNG">
+<img src="./documentation/features/shopping_bag_page2.PNG">
+
 ### Checkout Page
+
+This page is for the user to enter all of the delivery and payment information before preceding with the order. There is another summary of the bag here but it cannot be edited, the user must go back to the shopping bag page. 
+
+<img src="./documentation/features/checkout_page.PNG">
 
 ### Checkout Success Page
 
+On a successful completion of the order this page will be displayed, summarising the order and advising the user a confirmation email has been sent. 
+
+<img src="./documentation/features/order_confirmation.PNG">
+
 ### User Profile Page
+
+Here a user can edit their delivery information, view their order history and a quicker navigation to the Puzzle Exchange.
+
+<img src="./documentation/features/user_profile.PNG">
+
+### Order History Detail 
+
+Once the user has chosen a previous order to view they are directed to this page which summarises the order. 
+
+<img src="./documentation/features/order_history.PNG">
+
+### Notifications Page
+
+By accessing this page through the 'My Account' drop down the user is able to see if they have received any responses to their posts in the Puzzle Exchange
+
+<img src="./documentation/features/notifications.PNG">
 
 ### Puzzle Exchange List
 
@@ -361,9 +394,25 @@ On this page the user can see a paginated list of all of the submitted puzzles f
 
 ### Puzzle Exchange Puzzle Detail
 
+From here a user can see more detail on a puzzle and if they wish to trade, they can send a message. 
+
+<img src="./documentation/features/puzzle_detail.PNG">
+
 ### Puzzle Exchange User Submissions
 
+### Send Message
+
+If the user has chosen to send a message to the owner of the puzzle they will be directed to this form. 
+
+<img src="./documentation/features/send_message.PNG">
+
+<img src="./documentation/features/send_message_success.PNG">
+
 ### FAQ Page
+
+On this page the user can view all of the commonly asked questions about Perfect Fit and the service they provide.
+
+<img src="./documentation/features/FAQ.PNG">
 
 ### About Us Page
 
