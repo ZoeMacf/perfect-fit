@@ -2,32 +2,33 @@
 {% load static %}
 
 {% block page_header %}
-    <div class="container header-container">
-        <div class="row">
-            <div class="col"></div>
-        </div>
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
     </div>
+</div>
 {% endblock %}
 
 {% block content %}
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <hr>
-                <h2 class="content-font mb-4 text-uppercase">Success!</h2>
-                <hr>
-                <p class="content-font">Your message has been successfully sent to {{ puzzle.poster }}, they will be notified shortly!</p>
-            </div>
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <hr>
+            <h2 class="content-font mb-4 text-uppercase">Success!</h2>
+            <hr>
+            <p class="content-font">Your message has been successfully sent to {{ puzzle.poster }}, they will be
+                notified shortly!</p>
         </div>
+    </div>
 
-        <div class="row">
-            <div class="col-12 col-md-6">
-                <a href="{% url 'puzzles' %}" class="btn btn-dark rounded-2 content-font mt-5">
-                    <span class="icon">
-                        <i class="fas fa-chevron-left"></i>
-                    </span>
-                    <span class="text-uppercase">Return to Puzzle Exchange</span>
-                </a>
-            </div>
-          </div>
-{% endblock %}
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <a href="{% url 'puzzles' %}" class="btn btn-dark rounded-2 content-font mt-5">
+                <span class="icon">
+                    <i class="fas fa-chevron-left"></i>
+                </span>
+                <span class="text-uppercase">Return to Puzzle Exchange</span>
+            </a>
+        </div>
+    </div>
+    {% endblock %}

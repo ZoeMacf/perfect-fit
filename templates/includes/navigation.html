@@ -1,88 +1,97 @@
 <div class="collapse navbar-collapse navbar-style" id="main-nav">
-  <ul class="navbar-nav w-auto mx-auto">
-      <li class="nav-item dropdown">
-        {% if request.user.is_authenticated %}
-          <a class="nav-link mr-5 border-start border-end navbar-style hover-underline-animation" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              All Products
-          </a>
-          <div class="dropdown-menu border-2 border-dark" aria-labelledby="all-products-link">
-              <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
-              <a href="{% url 'products' %}?sort=rating&direction=desc" class="dropdown-item ">By Rating</a>
-              <a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item ">By Category</a>
-              <a href="{% url 'products' %}" class="dropdown-item ">All Products</a>
+    <ul class="navbar-nav w-auto mx-auto">
+        <li class="nav-item dropdown">
+            {% if request.user.is_authenticated %}
+            <a class="nav-link mr-5 border-start border-end navbar-style hover-underline-animation" href="#"
+                id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                All Products
+            </a>
+            <div class="dropdown-menu border-2 border-dark" aria-labelledby="all-products-link">
+                <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
+                <a href="{% url 'products' %}?sort=rating&direction=desc" class="dropdown-item ">By Rating</a>
+                <a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item ">By Category</a>
+                <a href="{% url 'products' %}" class="dropdown-item ">All Products</a>
 
-          </div>
-      </li>
+            </div>
+        </li>
 
-      <li class="nav-item dropdown">
-          <a class="nav-link border-end mr-5 navbar-style hover-underline-animation" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
-              Puzzles
-          </a>
-          <div class="dropdown-menu border-2 border-dark" aria-labelledby="puzzles-link">
-              <a href="{% url 'products' %}?category=500_pieces" class="dropdown-item">500 Pieces</a>
-              <a href="{% url 'products' %}?category=1000_pieces" class="dropdown-item">1000 Pieces</a>
-              <a href="{% url 'products' %}?category=1500_pieces" class="dropdown-item">1500 Pieces</a>
-              <a href="{% url 'products' %}?category=wooden_puzzles" class="dropdown-item">Wooden Jigsaw Puzzles</a>
-              <a href="{% url 'products' %}?category=4_in_a_box" class="dropdown-item">4 in a Box</a>
-              <a href="{% url 'products' %}?category=puzzle_accessories" class="dropdown-item">Accessories</a>
-          </div>
-      </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link border-end mr-5 navbar-style hover-underline-animation" href="#" role="button"
+                data-toggle="dropdown" aria-expanded="false">
+                Puzzles
+            </a>
+            <div class="dropdown-menu border-2 border-dark" aria-labelledby="puzzles-link">
+                <a href="{% url 'products' %}?category=500_pieces" class="dropdown-item">500 Pieces</a>
+                <a href="{% url 'products' %}?category=1000_pieces" class="dropdown-item">1000 Pieces</a>
+                <a href="{% url 'products' %}?category=1500_pieces" class="dropdown-item">1500 Pieces</a>
+                <a href="{% url 'products' %}?category=wooden_puzzles" class="dropdown-item">Wooden Jigsaw Puzzles</a>
+                <a href="{% url 'products' %}?category=4_in_a_box" class="dropdown-item">4 in a Box</a>
+                <a href="{% url 'products' %}?category=puzzle_accessories" class="dropdown-item">Accessories</a>
+            </div>
+        </li>
 
-      <li class="nav-item dropdown">
-          <a class="nav-link border-end mr-5 navbar-style hover-underline-animation" href="" id="puzzle-exchange-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Puzzle Exchange
-          </a>
-          <div class="dropdown-menu border-2 border-dark" aria-labelledby="puzzle-exchange-link">
-              <a href="{% url 'puzzles' %}" class="dropdown-item">All Submissions</a>
-              <a href="{% url 'user_submissions' %}" class="dropdown-item">My Submissions</a>
-          </div>
-      </li>
-      <li class="nav-item">
-          <a class="nav-link border-end navbar-style hover-underline-animation" href="{% url 'faq' %}" id="faq-link"  aria-haspopup="true" aria-expanded="false">
-              FAQ
-          </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link border-end navbar-style hover-underline-animation" href="{% url 'about_us' %}" id="about-us-link"  aria-haspopup="true" aria-expanded="false">
-            About Us
+        <li class="nav-item dropdown">
+            <a class="nav-link border-end mr-5 navbar-style hover-underline-animation" href="" id="puzzle-exchange-link"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Puzzle Exchange
+            </a>
+            <div class="dropdown-menu border-2 border-dark" aria-labelledby="puzzle-exchange-link">
+                <a href="{% url 'puzzles' %}" class="dropdown-item">All Submissions</a>
+                <a href="{% url 'user_submissions' %}" class="dropdown-item">My Submissions</a>
+            </div>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link border-end navbar-style hover-underline-animation" href="{% url 'faq' %}" id="faq-link"
+                aria-haspopup="true" aria-expanded="false">
+                FAQ
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link border-end navbar-style hover-underline-animation" href="{% url 'about_us' %}"
+                id="about-us-link" aria-haspopup="true" aria-expanded="false">
+                About Us
+            </a>
+        </li>
+        {% else %}
+        <a class="nav-link mr-5 border-start border-end navbar-style hover-underline-animation" href="#"
+            id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            All Products
         </a>
-    </li>
-    {% else %}
-    <a class="nav-link mr-5 border-start border-end navbar-style hover-underline-animation" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        All Products
-    </a>
-    <div class="dropdown-menu border-2 border-dark" aria-labelledby="all-products-link">
-        <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
-        <a href="{% url 'products' %}?sort=rating&direction=desc" class="dropdown-item ">By Rating</a>
-        <a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item ">By Category</a>
-        <a href="{% url 'products' %}" class="dropdown-item ">All Products</a>
+        <div class="dropdown-menu border-2 border-dark" aria-labelledby="all-products-link">
+            <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
+            <a href="{% url 'products' %}?sort=rating&direction=desc" class="dropdown-item ">By Rating</a>
+            <a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item ">By Category</a>
+            <a href="{% url 'products' %}" class="dropdown-item ">All Products</a>
 
-    </div>
-</li>
-<li class="nav-item dropdown">
-    <a class="nav-link border-end mr-5 navbar-style hover-underline-animation" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
-        Puzzles
-    </a>
-    <div class="dropdown-menu border-2 border-dark" aria-labelledby="puzzles-link">
-        <a href="{% url 'products' %}?category=500_pieces" class="dropdown-item">500 Pieces</a>
-        <a href="{% url 'products' %}?category=1000_pieces" class="dropdown-item">1000 Pieces</a>
-        <a href="{% url 'products' %}?category=1500_pieces" class="dropdown-item">1500 Pieces</a>
-        <a href="{% url 'products' %}?category=wooden_puzzles" class="dropdown-item">Wooden Jigsaw Puzzles</a>
-        <a href="{% url 'products' %}?category=4_in_a_box" class="dropdown-item">4 in a Box</a>
-        <a href="{% url 'products' %}?category=puzzle_accessories" class="dropdown-item">Accessories</a>
-    </div>
-</li>
-<li class="nav-item">
-    <a class="nav-link border-end navbar-style hover-underline-animation" href="{% url 'faq' %}" id="faq-link"  aria-haspopup="true" aria-expanded="false">
-        FAQ
-    </a>
-</li>
-<li class="nav-item">
-  <a class="nav-link border-end navbar-style hover-underline-animation" href="{% url 'about_us' %}" id="about-us-link"  aria-haspopup="true" aria-expanded="false">
-      About Us
-  </a>
-</li>
-{% endif %}
+        </div>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link border-end mr-5 navbar-style hover-underline-animation" href="#" role="button"
+                data-toggle="dropdown" aria-expanded="false">
+                Puzzles
+            </a>
+            <div class="dropdown-menu border-2 border-dark" aria-labelledby="puzzles-link">
+                <a href="{% url 'products' %}?category=500_pieces" class="dropdown-item">500 Pieces</a>
+                <a href="{% url 'products' %}?category=1000_pieces" class="dropdown-item">1000 Pieces</a>
+                <a href="{% url 'products' %}?category=1500_pieces" class="dropdown-item">1500 Pieces</a>
+                <a href="{% url 'products' %}?category=wooden_puzzles" class="dropdown-item">Wooden Jigsaw Puzzles</a>
+                <a href="{% url 'products' %}?category=4_in_a_box" class="dropdown-item">4 in a Box</a>
+                <a href="{% url 'products' %}?category=puzzle_accessories" class="dropdown-item">Accessories</a>
+            </div>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link border-end navbar-style hover-underline-animation" href="{% url 'faq' %}" id="faq-link"
+                aria-haspopup="true" aria-expanded="false">
+                FAQ
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link border-end navbar-style hover-underline-animation" href="{% url 'about_us' %}"
+                id="about-us-link" aria-haspopup="true" aria-expanded="false">
+                About Us
+            </a>
+        </li>
+        {% endif %}
 
-  </ul>
+    </ul>
 </div>

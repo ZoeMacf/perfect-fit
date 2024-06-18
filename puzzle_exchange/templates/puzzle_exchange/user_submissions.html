@@ -1,11 +1,11 @@
 {% extends 'base.html' %}
 
 {% block page_header %}
-    <div class="container header-container">
-        <div class="row">
-            <div class="col"></div>
-        </div>
-    </div>
+<div class="container header-container">
+  <div class="row">
+    <div class="col"></div>
+  </div>
+</div>
 {% endblock %}
 
 {% block content %}
@@ -18,28 +18,28 @@
 
 <div class="row">
   <div class="col">
-  <div class="table rounded my-x">
-    <table class=" table table-striped">
-    <thead>
-      <tr>
-        <th scope="col" class="content-font">User</th>
-        <th scope="col" class="content-font">Title</th>
-        <th scope="col" class="content-font">Date</th>
-      </tr>
-    </thead>
-    <tbody>
-      {% for user_puzzle in user_puzzles %}
-      <tr>
-        <td class="content-font">{{ user_puzzle.poster }}</td>
-        <td class="content-font">{{ user_puzzle.title }}</td>
-        <td class="content-font">{{ user_puzzle.submitted_on }}</td>
-      </tr>
-      {% endfor %}
-    </tbody>
-</table>
-</div>
-</div>
+    <div class="table rounded my-x">
+      <table class=" table table-striped">
+        <thead>
+          <tr>
+            <th scope="col" class="content-font">User</th>
+            <th scope="col" class="content-font">Title</th>
+            <th scope="col" class="content-font">Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for user_puzzle in user_puzzles %}
+          <tr>
+            <td class="content-font">{{ user_puzzle.poster }}</td>
+            <td class="content-font">{{ user_puzzle.title }}</td>
+            <td class="content-font">{{ user_puzzle.submitted_on }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </div>
 
 
 
-{% endblock %}
+  {% endblock %}

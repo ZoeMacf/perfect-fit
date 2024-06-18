@@ -2,78 +2,80 @@
 {% load static %}
 
 {% block page_header %}
-    <div class="container header-container">
-        <div class="row">
-            <div class="col"></div>
-        </div>
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
     </div>
+</div>
 {% endblock %}
 
 {% block content %}
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <hr>
-                <h2 class="content-font mb-4">My Profile</h2>
-                <hr>
-            </div>
-        </div> 
-        <div class="row">
-            <div class="col-12 col-lg-6">
-                <p class="text-muted content-font">Default Delivery Information</p>
-                <form class="mt-3 content-font" action="{% url 'user_profile' %}" method="POST" id="profile-update-form">
-                    {% csrf_token %}
-                    {{ form|crispy}}
-                    <button class="btn btn-dark rounded text-uppercase float-right content-font">Update Order Information</button>
-                </form>
-            </div>
-            <div class="col-12 col-lg-6">
-                <p class="text-muted content-font">Order History</p>
-                <div class="order-history table-responsive">
-                    <table class="table table-sm table-borderless">
-                        <thead>
-                            <tr>
-                                <th class="content-font">Order Number</th>
-                                <th class="content-font">Date</th>
-                                <th class="content-font">Items</th>
-                                <th class="content-font">Order Total</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            {% for order in orders %}
-                                <tr>
-                                    <td>
-                                        <a class="content-font" href="{% url 'order_detail' order.order_number %}" title="{{ order.order_number }}">
-                                            {{ order.order_number|truncatechars:6 }}
-                                        </a>
-                                    </td>
-                                    <td class="content-font">{{ order.date }}</td>
-                                        <td>
-                                            <ul class="content-font list-unstyled">
-                                                {% for item in order.lineitems.all %}
-                                                <li class="small content-font">
-                                                   {{ item.product.name }} x {{ item.quantity }}
-                                                </li>
-                                                {% endfor %}
-                                            </ul>
-                                        </td>
-                                    <td class="content-font">{{ order.grand_total }}</td>
-                                </tr>
-                            {% endfor %}
-                        </tbody>
-                    </table>
-                </div>
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <hr>
+            <h2 class="content-font mb-4">My Profile</h2>
+            <hr>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-lg-6">
+            <p class="text-muted content-font">Default Delivery Information</p>
+            <form class="mt-3 content-font" action="{% url 'user_profile' %}" method="POST" id="profile-update-form">
+                {% csrf_token %}
+                {{ form|crispy}}
+                <button class="btn btn-dark rounded text-uppercase float-right content-font">Update Order
+                    Information</button>
+            </form>
+        </div>
+        <div class="col-12 col-lg-6">
+            <p class="text-muted content-font">Order History</p>
+            <div class="order-history table-responsive">
+                <table class="table table-sm table-borderless">
+                    <thead>
+                        <tr>
+                            <th class="content-font">Order Number</th>
+                            <th class="content-font">Date</th>
+                            <th class="content-font">Items</th>
+                            <th class="content-font">Order Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for order in orders %}
+                        <tr>
+                            <td>
+                                <a class="content-font" href="{% url 'order_detail' order.order_number %}"
+                                    title="{{ order.order_number }}">
+                                    {{ order.order_number|truncatechars:6 }}
+                                </a>
+                            </td>
+                            <td class="content-font">{{ order.date }}</td>
+                            <td>
+                                <ul class="content-font list-unstyled">
+                                    {% for item in order.lineitems.all %}
+                                    <li class="small content-font">
+                                        {{ item.product.name }} x {{ item.quantity }}
+                                    </li>
+                                    {% endfor %}
+                                </ul>
+                            </td>
+                            <td class="content-font">{{ order.grand_total }}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
             </div>
         </div>
+    </div>
 
-        <div class="col-12 col-lg-7 text-right content-font mt-5">
-            <p>Have a puzzle you no longer need? Visit our puzzle exchange now!</p>
-            <a href="{% url 'puzzles' %}" class="btn btn-dark rounded my-2">
-              <span class="icon mr-2">
+    <div class="col-12 col-lg-7 text-right content-font mt-5">
+        <p>Have a puzzle you no longer need? Visit our puzzle exchange now!</p>
+        <a href="{% url 'puzzles' %}" class="btn btn-dark rounded my-2">
+            <span class="icon mr-2">
                 <i class="fas fa-puzzle-piece"></i>
-              </span>
-              <span class="text-uppercase content-font">Visit the puzzle exchange</span>
-            </a>
-          </div>
-        </div>
+            </span>
+            <span class="text-uppercase content-font">Visit the puzzle exchange</span>
+        </a>
+    </div>
+</div>
 {% endblock %}

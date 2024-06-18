@@ -2,43 +2,44 @@
 {% load static %}
 
 {% block page_header %}
-    <div class="container header-container">
-        <div class="row">
-            <div class="col"></div>
-        </div>
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
     </div>
+</div>
 {% endblock %}
 
 
 {% block content %}
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-md-6">
-                <hr>
-                <h2 class="content-font mb-4">Puzzle Exchange</h2>
-                <h5 class="text-muted content-font">Submit a puzzle to exchange</h5>
-                <hr>
-            </div>
-        </div>
-
-        <div class="row">
-          <div class="col-12 col-md-6">
-              <form method="POST" action="{% url 'submit_puzzle' %}" class="form mb-2 content-font" enctype="multipart/form-data">
-                {% csrf_token %}
-                    {% for field in form %}
-                        {% if field.name != 'image' %}
-                            {{ field | as_crispy_field }}
-                        {% else %}
-                            {{ field }}
-                        {% endif %}
-                    {% endfor %}
-                <div class="text-right">
-                  <a class="btn btn-dark rounded content-font mt-2" href="{% url 'puzzles'%}">Cancel</a>
-                  <button class="btn btn-dark rounded content-font mt-2" type="submit">Submit Puzzle</button>
-                </div>
-              </form>
-          </div>
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <hr>
+            <h2 class="content-font mb-4">Puzzle Exchange</h2>
+            <h5 class="text-muted content-font">Submit a puzzle to exchange</h5>
+            <hr>
         </div>
     </div>
+
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <form method="POST" action="{% url 'submit_puzzle' %}" class="form mb-2 content-font"
+                enctype="multipart/form-data">
+                {% csrf_token %}
+                {% for field in form %}
+                {% if field.name != 'image' %}
+                {{ field | as_crispy_field }}
+                {% else %}
+                {{ field }}
+                {% endif %}
+                {% endfor %}
+                <div class="text-right">
+                    <a class="btn btn-dark rounded content-font mt-2" href="{% url 'puzzles'%}">Cancel</a>
+                    <button class="btn btn-dark rounded content-font mt-2" type="submit">Submit Puzzle</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
 
 {% endblock %}

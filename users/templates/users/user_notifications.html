@@ -2,49 +2,49 @@
 {% load static %}
 
 {% block page_header %}
-    <div class="container header-container">
-        <div class="row">
-            <div class="col"></div>
-        </div>
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
     </div>
+</div>
 {% endblock %}
 
 {% block content %}
 <div class="container">
-  <div class="row">
-      <div class="col">
-          <hr>
-          <h2 class="content-font mb-4 text-uppercase content-font">Notifications</h2>
-          <hr>
-          <p class="content-font">You can find all of your Puzzle Exchange notifications here</p>
-      </div>
-  </div>
-
-  <div class="row">
-    <div class="col-12 col-lg-7">
-      <div class="p-2">
-        <div class="row">
-            <ul class="list-group">
-            {% for user_message in user_messages %}
-            <li class="list-group-item">
-              <h6 class="content-font"><strong>Message from: </strong>{{ user_message.sender }}</h6>
-              <h6 class="content-font">Message: {{ user_message.msg_content }}</h6>
-            </li>
-            <hr class="border-0">
-            {% endfor %}
-        </ul>
+    <div class="row">
+        <div class="col">
+            <hr>
+            <h2 class="content-font mb-4 text-uppercase content-font">Notifications</h2>
+            <hr>
+            <p class="content-font">You can find all of your Puzzle Exchange notifications here</p>
         </div>
     </div>
-</div>
-<div class="row">
-    <div class="col-12 col-md-6">
-        <a href="{% url 'user_profile' %}" class="btn btn-dark rounded-2 content-font mt-5">
-            <span class="icon">
-                <i class="fas fa-chevron-left"></i>
-            </span>
-            <span class="text-uppercase">My Profile</span>
-        </a>
+
+    <div class="row">
+        <div class="col-12 col-lg-7">
+            <div class="p-2">
+                <div class="row">
+                    <ul class="list-group">
+                        {% for user_message in user_messages %}
+                        <li class="list-group-item">
+                            <h6 class="content-font"><strong>Message from: </strong>{{ user_message.sender }}</h6>
+                            <h6 class="content-font">Message: {{ user_message.msg_content }}</h6>
+                        </li>
+                        <hr class="border-0">
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <a href="{% url 'user_profile' %}" class="btn btn-dark rounded-2 content-font mt-5">
+                    <span class="icon">
+                        <i class="fas fa-chevron-left"></i>
+                    </span>
+                    <span class="text-uppercase">My Profile</span>
+                </a>
+            </div>
+        </div>
     </div>
-  </div>
-</div>
-{% endblock %}
+    {% endblock %}
