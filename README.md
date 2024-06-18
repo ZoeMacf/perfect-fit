@@ -533,12 +533,28 @@ The following packages were installed throughout the development.
 |---|---|---|---|---|
 |  Checkout Page - Order Summary  | When on the checkout page an order summary must be visible | Using the 'Secure Checkout' button navigate to the checkout page. | To the right of the delivery information input a summary of the order is visible  | Pass  |
 |  Checkout Page - Complete an order with Stripe  | Order should sucessfully complete using stripe payment processor | Fill out delivery details and stripe test card information | Order is completed and a confirmation is displayed to the page  | Pass  |
+|  Checkout Page - Confirmation Email  | A confirmation email should be sent on completion of order placement. | Fill out delivery details and stripe test card information | Order is completed and a confirmation email is sent to the user  | Pass  |
 
 ### User Profile Page
 | Feature Tested  | Outcome  | Test Performed  | Result  | Pass/Fail  |
 |---|---|---|---|---|
 |  User Profile Page - Update Delivery Information | Delivery information can be updated through a form on user profile page | Fill out new delivery details and submit form | A notification is displayed and the information is updated.  | Pass  |
-|  User Profile Page - Order History | Previous orders can be viewed | On profile page navigated to the order history table and select an order using the order number  | After selecting an order a page is displayed showing the order information. |Pass  |
+|  User Profile Page - Order History | Previous orders can be viewed | On profile page navigated to the order history table and select an order using the order number  | After selecting an order a page is displayed showing the order information. | Pass  |
+
+### Notifications Page
+
+| Feature Tested  | Outcome  | Test Performed  | Result  | Pass/Fail  |
+|---|---|---|---|---|
+|  Notifcations Page | All messages that have been sent to the user can be viewed here. | Select 'My Notifications' from the My Account dropdown | A list of messages is displayed to the user.  | Pass  |
+
+
+### Puzzle Exchange Page
+
+| Feature Tested  | Outcome  | Test Performed  | Result  | Pass/Fail  |
+|---|---|---|---|---|
+|  Puzzle Exchange - Puzzle List | All of the submitted puzzles can be viewed here with pagination | Click on the 'All Submissions' link on the 'Puzzle Exchange' dropdown | A list of puzzles is displayed, the title of the puzzles can be clicked to go to the more detailed page for the puzzle. | Pass  |
+|  Puzzle Exchange - Puzzle Detail | View more information on puzzle | Click on the 'Disney Heroes' puzzle link. | Further information on the puzzle is displayed. | Pass  |
+|  Puzzle Exchange - Send Message | Send a message to user that posted the puzzle | Click on the 'Submit Message' button and fill out the form. | Message is sent to the user and a message is displayed to the screen advising. | Pass  |
 
 ## Bugs
 
