@@ -34,8 +34,17 @@
             {% endfor %}
         </ul>
         </div>
-
     </div>
 </div>
+<div class="row">
+    <div class="col-12 col-md-6">
+        <a href="{% url 'user_profile' %}" class="btn btn-dark rounded-2 content-font mt-5">
+            <span class="icon">
+                <i class="fas fa-chevron-left"></i>
+            </span>
+            <span class="text-uppercase">My Profile</span>
+        </a>
+    </div>
+  </div>
 </div>
 {% endblock %}
