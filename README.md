@@ -447,6 +447,7 @@ The following packages were installed throughout the development.
 | [Cloudinary](https://console.cloudinary.com/console/c-76474938bafa5565ebd5ea8f26db45/home/product-explorer)   | Cloudinary was used for hosting product images online for deployment.        |
 | [Pillow](https://pypi.org/project/pillow/)   | Pillow was used for image processing.        |
 | [Stripe](https://dashboard.stripe.com/test/developers)   | Stripe was used for implementing a safe and secure means of taking payments and using webhooks to send confirmation emails.         |
+| [Black](https://pypi.org/project/black/)   | Black was used to format all of the .py files to Pep8 standard before a final check with a Pep8 Linter. |
 
 ### Tools and Programs Used
 
@@ -456,11 +457,17 @@ The following packages were installed throughout the development.
 - [Heroku](https://id.heroku.com/login) was used for deployment. 
 - [Coolors](https://coolors.co/) was used for the colour palette. 
 - [FontAwesome](https://fontawesome.com/) for providing all icons used throughout the site.  
-- [Balsamiq](https://balsamiq.com/) for creating the wireframes. 
+- [Balsamiq](https://balsamiq.com/) for creating the 
+wireframes. 
+- [Code Institute Pep8 Linter](https://pep8ci.herokuapp.com/#) was used for reviewing all .py files during code validation tests. 
 
 ## Testing
 
 ### Code Validation
+
+#### Pep8 Validation
+
+All of the .py files were formatted using Black and then checked with a Pep8 linter, all of the files passed this check - however the settings.py had long lines for the password authentication section and I was unable to remedy this issue. 
 
 #### Lighthouse
 
