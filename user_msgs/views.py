@@ -9,41 +9,42 @@ from .forms import UserMessageForm
 
 @login_required
 def submit_message(request, puzzle_id):
-    """ view to submit a message to puzzle exchange poster"""
+    """view to submit a message to puzzle exchange poster"""
 
     puzzle = get_object_or_404(PuzzleExchange, pk=puzzle_id)
 
-    if request.method == 'POST':
+    if request.method == "POST":
         form = UserMessageForm(request.POST)
         if form.is_valid():
             message = form.save(commit=False)
             message.sender = request.user.userprofile
             message = form.save()
             message.message_receiver.add(puzzle.poster.user.userprofile)
-            messages.success(request, f'Successfully sent your message to {puzzle.poster}!')
-            return redirect(reverse('message_success', args=[puzzle.id]))
+            messages.success(
+                request, f"Successfully sent your message to {puzzle.poster}!"
+            )
+            return redirect(reverse("message_success", args=[puzzle.id]))
         else:
-            messages.error(request, 'Failed to submit your message. Please ensure the form is valid')
+            messages.error(
+                request,
+                "Failed to submit your message. '\
+                Please ensure the form is valid",
+            )
     else:
         form = UserMessageForm()
 
-    template = 'user_msgs/submit_message.html'
-    context  = {
-    'form': form,
-    'puzzle':puzzle
-    }
+    template = "user_msgs/submit_message.html"
+    context = {"form": form, "puzzle": puzzle}
 
     return render(request, template, context)
 
+
 def message_success(request, puzzle_id):
-    """ view to show sucessful message sent """
+    """view to show sucessful message sent"""
 
     puzzle = get_object_or_404(PuzzleExchange, pk=puzzle_id)
-    
 
-    template = 'user_msgs/message_success.html'
-    context = {
-        'puzzle':puzzle
-    }
+    template = "user_msgs/message_success.html"
+    context = {"puzzle": puzzle}
 
     return render(request, template, context)

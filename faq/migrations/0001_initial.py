@@ -7,16 +7,23 @@ class Migration(migrations.Migration):
 
     initial = True
 
-    dependencies = [
-    ]
+    dependencies = []
 
     operations = [
         migrations.CreateModel(
-            name='FaqContent',
+            name="FaqContent",
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('question', models.CharField(blank=True, max_length=254, null=True)),
-                ('answer', models.CharField(blank=True, max_length=254, null=True)),
+                (
+                    "id",
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("question", models.CharField(blank=True, max_length=254, null=True)),
+                ("answer", models.CharField(blank=True, max_length=254, null=True)),
             ],
         ),
     ]

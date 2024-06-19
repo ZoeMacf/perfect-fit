@@ -6,14 +6,16 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('users', '0001_initial'),
-        ('user_msgs', '0003_rename_receiver_usermessage_message_receiver'),
+        ("users", "0001_initial"),
+        ("user_msgs", "0003_rename_receiver_usermessage_message_receiver"),
     ]
 
     operations = [
         migrations.AlterField(
-            model_name='usermessage',
-            name='message_receiver',
-            field=models.ManyToManyField(null=True, related_name='message_receiver', to='users.UserProfile'),
+            model_name="usermessage",
+            name="message_receiver",
+            field=models.ManyToManyField(
+                null=True, related_name="message_receiver", to="users.UserProfile"
+            ),
         ),
     ]

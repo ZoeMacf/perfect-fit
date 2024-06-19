@@ -10,20 +10,40 @@ class Migration(migrations.Migration):
     initial = True
 
     dependencies = [
-        ('users', '0001_initial'),
+        ("users", "0001_initial"),
     ]
 
     operations = [
         migrations.CreateModel(
-            name='PuzzleExchange',
+            name="PuzzleExchange",
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('title', models.CharField(max_length=200, unique=True)),
-                ('submitted_on', models.DateTimeField(auto_now=True)),
-                ('approved_submission', models.BooleanField(default=False)),
-                ('body', models.TextField()),
-                ('image', cloudinary.models.CloudinaryField(default='placeholder', max_length=255, verbose_name='image')),
-                ('poster', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='puzzle_submission', to='users.userprofile')),
+                (
+                    "id",
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("title", models.CharField(max_length=200, unique=True)),
+                ("submitted_on", models.DateTimeField(auto_now=True)),
+                ("approved_submission", models.BooleanField(default=False)),
+                ("body", models.TextField()),
+                (
+                    "image",
+                    cloudinary.models.CloudinaryField(
+                        default="placeholder", max_length=255, verbose_name="image"
+                    ),
+                ),
+                (
+                    "poster",
+                    models.ForeignKey(
+                        on_delete=django.db.models.deletion.CASCADE,
+                        related_name="puzzle_submission",
+                        to="users.userprofile",
+                    ),
+                ),
             ],
         ),
     ]
