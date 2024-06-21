@@ -219,6 +219,10 @@ body {
   display: hidden;
 }
 
+.card-container {
+  width: 50%;
+}
+
 /* about us  */
 
 .about-us-container {
@@ -360,6 +364,16 @@ body {
     width: 13vw;
   }
 
+   /* faq */
+
+   .faq-card {
+    width: 80vw !important;
+  }
+
+  .card-container {
+    width: 85%;
+  }
+
 }
 
 
@@ -384,6 +398,16 @@ body {
     height: 30vh;
     width: 16vw;
     margin-left: -12px;
+  }
+
+  /* faq */
+
+  .faq-card {
+    width: 80vw !important;
+  }
+
+  .card-container {
+    width: 100%;
   }
 
 
@@ -417,7 +441,7 @@ body {
   .banner-container {
     height: 35vh;
     width: 40vw;
-    margin-left: -55px;
+    margin-left: -50px;
   }
 
   /*  bag page */
@@ -430,6 +454,16 @@ body {
 
   .about-us-text {
     border: #191923;
+  }
+
+  /* faq */
+
+  .faq-card {
+    width: 70vw !important;
+  }
+
+  .card-container {
+    width: 100%;
   }
 
 }
