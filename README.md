@@ -6,6 +6,8 @@ Puzzle Fit is a home for puzzle enthusiasts, here users can browse many kinds of
 
 Users can also participate in a puzzle exchange with other users wherein they can trade puzzles they are no longer using - this service is free to the users however they will pay for postage themselves, the site is more so a hosting platform for this service. 
 
+Deployed Site - [Perfect Fit](https://perfect-fit-141e9a7db2b0.herokuapp.com/)
+
 ## Contents
 
 * [User Experience](#user-experience)
@@ -408,8 +410,6 @@ On this page a user can fill out a form to submit their own puzzle to the Puzzle
 
 <img src="./documentation/features/submit_puzzle.PNG">
 
-### Puzzle Exchange User Submissions
-
 ### Send Message
 
 If the user has chosen to send a message to the owner of the puzzle they will be directed to this form. 
@@ -429,6 +429,14 @@ On this page the user can view all of the commonly asked questions about Perfect
 On this page the user can learn more about Perfect Fit
 
 <img src="./documentation/features/about_us.PNG">
+
+### Contact Us
+
+From here the user can submit a query to Perfect Fit's support team. 
+
+<img src="./documentation/features/contact_us.PNG">
+
+<img src="./documentation/features/contact_us_success.PNG">
 
 
 ## Languages and Technologies
