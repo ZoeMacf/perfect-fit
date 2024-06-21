@@ -479,6 +479,8 @@ All of the .py files were formatted using Black and then checked with a Pep8 lin
 
 #### Lighthouse
 
+All of the pages for this project were tested using [Google-Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/).
+
 ##### Home Page
 
 ##### Products Page

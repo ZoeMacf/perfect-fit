@@ -1,1 +1,1 @@
-Confirmation of query {{ msg_subject }}
+Confirmation of query {{ contact_us.msg_subject }}

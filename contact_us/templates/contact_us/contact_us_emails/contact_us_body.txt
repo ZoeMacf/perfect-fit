@@ -1,6 +1,6 @@
 Hi, {{ contact_us.full_name }}
 
-Thank you for submitting your query on {{ msg_subject }}.
+Thank you for submitting your query on {{ contact_us.msg_subject }}.
 
 A member of our team will reach out to you in regards to this query within 1-2 business days.
 
