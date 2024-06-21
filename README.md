@@ -1,5 +1,7 @@
 # Perfect Fit
 
+<img src="./documentation/amiresponsive-perfect-fit.PNG">
+
 ## Overview
 
 Puzzle Fit is a home for puzzle enthusiasts, here users can browse many kinds of puzzles and even create a puzzle using a favourite photo. 
@@ -463,7 +465,8 @@ The following packages were installed throughout the development.
 - [Git](https://git-scm.com/) was used for version control. 
 - [GitHub](https://github.com/) for hosting my repository and project board. 
 - [Heroku](https://id.heroku.com/login) was used for deployment. 
-- [Coolors](https://coolors.co/) was used for the colour palette. 
+- [Coolors](https://coolors.co/) was used for the colour palette.
+- [AmIResponsive](https://ui.dev/amiresponsive) for creating the README header image. 
 - [FontAwesome](https://fontawesome.com/) for providing all icons used throughout the site.  
 - [Balsamiq](https://balsamiq.com/) for creating the 
 wireframes. 
