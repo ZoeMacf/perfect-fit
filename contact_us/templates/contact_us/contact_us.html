@@ -23,7 +23,7 @@
 
     <div class="row">
         <div class="col-12 col-md-6">
-            <form method="POST" action="{% url 'contact_us' %}" class="form mb-2 content-font"
+            <form method="POST" action="{% url 'contact_us_query' %}" class="form mb-2 content-font"
                 enctype="multipart/form-data">
                 {% csrf_token %}
                 {{ form|crispy }}
