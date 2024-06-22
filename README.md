@@ -26,6 +26,7 @@ Deployed Site - [Perfect Fit](https://perfect-fit-141e9a7db2b0.herokuapp.com/)
 - [Testing](#testing)
     - [Code Validation](#code-validation)
     - [Manual Testing](#manual-testing)
+- [Setting up Django App](#setting-up-django-app)
 - [Deployment](#deployment)
 - [Content](#content)
 - [Credits](#credits)
@@ -635,7 +636,23 @@ The styling for the sign in and sign out was suddenly no longer applied - no cha
 Initially all of the delivery information would not populate despite being saved to the profile this has been fixed for all fields except the full_name I have been unable to find the cause for this error. 
 
 #### Toast Notifications 
-A toast notification for the bag is displayed whenever a review is submitted, I tried to amend this similar to the profile page but could not get it to update. 
+A toast notification for the bag is displayed whenever a review is submitted, I tried to amend this similar to the profile page but could not get it to update.
+
+## Setting Up Django App
+
+To create the project app the following was done:
+
+1. Using the [Code Institute Gitpod Full Template](https://github.com/Code-Institute-Org/gitpod-full-template) create a new GitHub repository. 
+2. After setting up the repository the next step is to install Django and Gunicorn to the workspace. This is done by entering in: `pip3 install django<4` and `pip3 install gunicorn`.
+3. In order to prepare the app for creating a database and using PostGres the following two libraries dj_database_url and psycopg2. To do so type the following: `pip3 install dj_database_url==0.5.0 psycopg2`.
+4. After these have been installed a requirements file is needed to manage the libraries. This is done through the following command `pip3 freeze > requirements.txt`.
+5. Next the main project needs to be created, this is done with the command `django-admin startproject project_name`.
+6. Next each app for the project can be created with the command `python3 manage.py startapp app_name`.
+7. When a new app has been installed it will need to be added to settings.py within the main project folder.
+8. When building or changing models within the project it is best practice to first check them through `python3 manage.py makemigrations app_name --dry-run` this allows you to check for any errors. 
+9. Providing there are no errors you can then run `python3 manage.py makemigrations app_name` followed by `python3 manage.py migrate`.
+10. After this has been done you can check that the project has been set up correctly through the localhost by running the command `python3 manage.py runserver`.
+11. If successful a Django landing page will be displayed advising the project has been sucesssfully set up.
 
 ## Deployment
 
