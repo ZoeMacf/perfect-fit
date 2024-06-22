@@ -52,6 +52,12 @@
                 About Us
             </a>
         </li>
+        <li class="nav-item">
+            <a class="nav-link border-end navbar-style hover-underline-animation" href="{% url 'contact_us_query' %}"
+                id="contact-us-link" aria-haspopup="true" aria-expanded="false">
+                Contact Us
+            </a>
+        </li>
         {% else %}
         <a class="nav-link mr-5 border-start border-end navbar-style hover-underline-animation" href="#"
             id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -89,6 +95,12 @@
             <a class="nav-link border-end navbar-style hover-underline-animation" href="{% url 'about_us' %}"
                 id="about-us-link" aria-haspopup="true" aria-expanded="false">
                 About Us
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link border-end navbar-style hover-underline-animation" href="{% url 'contact_us_query' %}"
+                id="contact-us-link" aria-haspopup="true" aria-expanded="false">
+                Contact Us
             </a>
         </li>
         {% endif %}
