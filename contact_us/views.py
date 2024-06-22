@@ -42,11 +42,11 @@ def confirm_query(contact_us):
     cust_email = contact_us.email
     subject = render_to_string(
         "contact_us/contact_us_emails/contact_us_subject.txt",
-        {"msg_subject": contact_us.msg_subject},
+        {"contact_us": contact_us},
     )
     body = render_to_string(
         "contact_us/contact_us_emails/contact_us_body.txt",
-        {"contact_email": settings.EMAIL_HOST_USER},
+        {'contact_us':contact_us, "contact_email": settings.EMAIL_HOST_USER},
     )
 
     send_mail(subject, body, settings.EMAIL_HOST_USER, [cust_email])
