@@ -600,6 +600,14 @@ All of the .py files were formatted using Black and then checked with a Pep8 lin
 |  Puzzle Exchange - Puzzle Detail | View more information on puzzle | Click on the 'Disney Heroes' puzzle link. | Further information on the puzzle is displayed. | Pass  |
 |  Puzzle Exchange - Send Message | Send a message to user that posted the puzzle | Click on the 'Submit Message' button and fill out the form. | Message is sent to the user and a message is displayed to the screen advising. | Pass  |
 
+### Contact Us
+
+| Feature Tested  | Outcome  | Test Performed  | Result  | Pass/Fail  |
+|---|---|---|---|---|
+|  Contact Us Page | Display contact us page | Click on the 'Contact Us' link on the navigation dropdown | Contact us page is displayed with form. | Pass  |
+|  Contact Us Page | Send an email | Fill out form on contact us page and submit | Form is submitted and success page is displayed | Pass  |
+|  Contact Us Page | Confirmation of query | Fill out form on contact us page and submit | Confirmation email is received advising query has been received.  | Pass  |
+
 ## Bugs
 
 ## Deployment
