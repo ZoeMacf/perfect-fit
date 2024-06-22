@@ -2,8 +2,8 @@
 <li class="list-inline-item">
     <a class="nav-link d-block d-lg-none" href="#" id="mobile-search" data-toggle="dropdown"
         aria-haspopup="true" aria-expanded="false">
-        <div class="text-center">
-            <div><i class="fas fa-search fa-lg"></i></div>
+        <div class="text-center mx-3 px-2">
+            <div><i class="fas fa-search fa-sm"></i></div>
             <p class="my-0 content-font">Search</p>
         </div>
     </a>
@@ -12,7 +12,7 @@
             <div class="input-group w-100">
                 <input class="form-control border border-black rounded content-font" type="text" name="q"
                     placeholder="Search for your next puzzle...">
-                <div class="input-group-append">
+                <div class="input-group-append mx-3 px-2">
                     <button class="form-control form-control btn btb-dark border border-black rounded" type="submit">
                         <span class="icon">
                             <i class="fas fa-search"></i>
@@ -26,8 +26,8 @@
 <li class="list-inline-item dropdown">
     <a class="nav-link d-block d-lg-none" href="#" id="user-options" data-toggle="dropdown"
         aria-haspopup="true" aria-expanded="false">
-        <div class="text-center">
-            <div><i class="fas fa-user fa-lg"></i></div>
+        <div class="text-center mx-3 px-2">
+            <div><i class="fas fa-user fa-sm"></i></div>
             <p class="my-0 content-font">My Account</p>
         </div>
     </a>
@@ -48,8 +48,8 @@
 <li class="list-inline-item">
     <a class="{% if grand_total %}text-white font-weight-bold{% else %}text-white{% endif %} nav-link d-block d-lg-none content-font"
         href="{% url 'view_bag' %}">
-        <div class="text-center">
-            <div><i class="fas fa-shopping-bag fa-lg"></i></div>
+        <div class="text-center mx-3 px-2">
+            <div><i class="fas fa-shopping-bag fa-sm"></i></div>
             <p class="my-0">
                 {% if grand_total %}
                 €{{ grand_total|floatformat:2 }}
