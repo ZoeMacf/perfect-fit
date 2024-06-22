@@ -163,7 +163,7 @@ body {
 .page_btn {
   height: 200px;
   width: auto;
-  padding: 10px;
+  width: 20%;
   background-color: #191923;
   color: #FBFEF9;
   border-radius: 5px;
@@ -374,6 +374,19 @@ body {
   .card-container {
     width: 85%;
   }
+  
+    /* footer */
+
+    .social-media-text {
+      margin-left: 10px;
+      width: 20%;
+    }
+  
+    .github-text {
+      margin-left: 10px;
+      width: 20%;
+    }
+  
 
 }
 
@@ -410,6 +423,19 @@ body {
   .card-container {
     width: 100%;
   }
+
+    /* footer */
+
+    .social-media-text {
+      margin-left: 10px;
+      width: 20%;
+    }
+  
+    .github-text {
+      margin-left: 10px;
+      width: 20%;
+    }
+  
 
 
 }
@@ -460,6 +486,18 @@ body {
 
   .card-container {
     width: 100%;
+  }
+
+  /* footer */
+
+  .social-media-text {
+    margin-left: 10px;
+    width: 20%;
+  }
+
+  .github-text {
+    margin-left: 10px;
+    width: 20%;
   }
 
 }
