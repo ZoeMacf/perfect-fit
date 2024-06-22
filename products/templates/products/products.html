@@ -23,7 +23,8 @@
         <div class="col-12 col-md-6 my-auto order-md-last d-flex justify-content-center justify-content-md-end">
           <div class="sort-select-wrapper w-50">
             <select id="sort-selector"
-              class="custom-select custom-select-sm rounded-0 border border-{% if current_sorting != 'None_None' %}info{% else %}black{% endif %}">
+              class="custom-select custom-select-sm rounded-0 border border-{% if current_sorting != 'None_None' %}info{% else %}black{% endif %}"
+              aria-label="Selector for sorting products">
               <option value="reset" {% if current_sorting == 'None_None' %}selected{% endif %}>Sort by...</option>
               <option value="price_asc" {% if current_sorting == 'price_asc' %}selected{% endif %}>Price (low to high)
               </option>
@@ -86,8 +87,10 @@
                   {% endif %}
                   {% if request.user.is_superuser %}
                   <small class="ml-3 content-font">
-                    <a href="{% url 'edit_product' product.id %}" class="content-font text-info">Edit</a>
-                    <a class="text-danger content-font" href="{% url 'delete_product' product.id %}">Delete</a>
+                    <a href="{% url 'edit_product' product.id %}" class="content-font text-info"
+                      aria-label="Directs superuser to the edit product page">Edit</a>
+                    <a class="text-danger content-font" href="{% url 'delete_product' product.id %}"
+                      aria-lable="Deletes product from the database">Delete</a>
                   </small>
                   {% endif %}
                 </div>

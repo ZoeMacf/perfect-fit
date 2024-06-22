@@ -24,7 +24,7 @@
     <div class="row">
         <div class="col-12 col-md-6">
             <form method="POST" action="{% url 'submit_message' puzzle.id %}" class="form mb-2 content-font"
-                enctype="multipart/form-data">
+                enctype="multipart/form-data" aria-label="Form to submit a user message">
                 {% csrf_token %}
                 {{ form|crispy }}
                 <div class="text-right">

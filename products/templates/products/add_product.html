@@ -24,7 +24,7 @@
     <div class="row">
         <div class="col-12 col-md-6">
             <form method="POST" action="{% url 'add_product' %}" class="form mb-2 content-font"
-                enctype="multipart/form-data">
+                enctype="multipart/form-data" aria-label="Form to add a product">
                 {% csrf_token %}
                 {% for field in form %}
                 {% if field.name != 'image' %}

@@ -608,6 +608,12 @@ All of the .py files were formatted using Black and then checked with a Pep8 lin
 |  Contact Us Page | Send an email | Fill out form on contact us page and submit | Form is submitted and success page is displayed | Pass  |
 |  Contact Us Page | Confirmation of query | Fill out form on contact us page and submit | Confirmation email is received advising query has been received.  | Pass  |
 
+## Accessibility
+
+In order to ensure that Perfect Fit is accessible to all users, all pages were checked using [WAVE](https://wave.webaim.org/) (Web accessibility evaluation tool) was used to ensure that the site was accessible to all users and followed semantic standards.
+
+
+
 ## Bugs
 
 ## Deployment
