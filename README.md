@@ -189,17 +189,11 @@ For this project I decided to go with the above colour scheme, as this is an e-c
 
 #### Typography
 
-##### Logo Font
-
-<img src="./documentation/styling/logo_font.PNG">
-
-For the logo of the site I wanted go with something slightly playful that would suit the nature of the site, for this I chose Peralta
-
-##### General Font
+##### Font
 
 <img src="./documentation/styling/text_font.PNG">
 
-For the overall content of the site I wanted something easy to read that would go well alongside my chosen font for the logo, for this I chose Cutive Mono
+For the overall look of the site I wanted something easy to read that would go well with the minimalistic look I wanted to achieve, for this I chose Cutive Mono
 
 ### Database Design
 
@@ -500,7 +494,8 @@ The following packages were installed throughout the development.
 - [GitPod](https://gitpod.io/workspaces) was used as the main IDE for the project. 
 - [Git](https://git-scm.com/) was used for version control. 
 - [GitHub](https://github.com/) for hosting my repository and project board. 
-- [Heroku](https://id.heroku.com/login) was used for deployment. 
+- [Heroku](https://id.heroku.com/login) was used for deployment.
+- [Favicon.io](https://favicon.io/) was used to create the favicon for Perfect Fit.
 - [Coolors](https://coolors.co/) was used for the colour palette.
 - [AmIResponsive](https://ui.dev/amiresponsive) for creating the README header image. 
 - [FontAwesome](https://fontawesome.com/) for providing all icons used throughout the site.  
