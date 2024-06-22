@@ -37,12 +37,6 @@ body {
 }
 
 
-#logo-font {
-  font-family: Peralta;
-  color: #191923;
-  float: right;
-}
-
 .my-account {
   text-decoration: none;
   color: #191923;
@@ -231,12 +225,9 @@ body {
   width: 75%;
   object-fit: cover;
   border-radius: 10px;
-  margin-left: 10vw;
+  margin-left: 31vw;
 }
 
-.about-us-text {
-  font-size: large;
-}
 
 /* puzzle exchange */
 
@@ -335,13 +326,22 @@ body {
 
 @media screen and (max-width: 1200px) {
 
-  /* home page */
+  /* about us */
+
+  .about-us-text {
+    margin: 5px 5px;
+  }
 
 }
 
 @media screen and (max-width: 1024px) {
 
-  /* home page */
+  /* about us */
+
+  .about-us-text {
+    margin: 5px 5px;
+  }
+
 
 }
 
@@ -488,6 +488,19 @@ body {
     width: 100%;
   }
 
+  /* about us */
+
+  .about-us-image {
+    width: 65vw;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-left: 18vw;
+  }
+
+  .about-us-text {
+    margin: 5px 5px
+  }
+
   /* footer */
 
   .social-media-text {
@@ -498,6 +511,19 @@ body {
   .github-text {
     margin-left: 10px;
     width: 20%;
+  }
+
+  /*  about us  */
+
+  .about-us-image {
+    width: 70vw;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-left: 16vw;
+  }
+
+  .about-us-text {
+    margin: 5px 5px
   }
 
 }
