@@ -624,9 +624,18 @@ As bugs were found during development they were added to the project board and m
 Custom CSS and even Bootstrap classes would not update the styling of close button - even using ```!important``` did not fix the issue. 
 
 #### User Submitted Puzzles Link
-During development a page was created for User Submissions which would display the relevant posts for logged in user. Initially the list would display but trying to create a link to the post would fail, I was unable to resolve this error even with Tutor Support - there seems to be an issue with using the product id. 
+During development a page was created for User Submissions which would display the relevant posts for logged in user. Initially the list would display but trying to create a link to the post would fail, I was unable to resolve this error even with Tutor Support - there seems to be an issue with using the product id and as well as this the list will no longer display. 
 
 Due to this the user submissions list has been temporarily removed from the final deployed code till it can be fixed.
+
+#### Sign Out/Sign In Button
+The styling for the sign in and sign out was suddenly no longer applied - no changes were made to the html pages nor css code.
+
+#### Delivery Information Populating
+Initially all of the delivery information would not populate despite being saved to the profile this has been fixed for all fields except the full_name I have been unable to find the cause for this error. 
+
+#### Toast Notifications 
+A toast notification for the bag is displayed whenever a review is submitted, I tried to amend this similar to the profile page but could not get it to update. 
 
 ## Deployment
 
