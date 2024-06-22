@@ -108,8 +108,8 @@ body {
   border: 1px solid #191923;
   padding: .375rem .75rem;
   font-size: 1rem;
-  line-height: 1.5;
-  border-radius: 5;
+  line-height: 1.5px;
+  border-radius: 5px;
 
 }
 
@@ -163,7 +163,7 @@ body {
 .page_btn {
   height: 200px;
   width: auto;
-  padding: 10px;
+  width: 20%;
   background-color: #191923;
   color: #FBFEF9;
   border-radius: 5px;
@@ -214,10 +214,6 @@ body {
 }
 
 /* faq styling */
-
-.answer-content {
-  display: hidden;
-}
 
 .card-container {
   width: 50%;
@@ -270,7 +266,7 @@ body {
 
 /* footer styling */
 .social-media li {
-  list-style-type: none;
+  list-style-type:none
 }
 
 .social-media li a {
@@ -286,6 +282,11 @@ body {
 }
 
 .fa-instagram:hover {
+  text-shadow: 0 0 5px #FBFEF9;
+
+}
+
+.fa-github:hover {
   text-shadow: 0 0 5px #FBFEF9;
 
 }
@@ -373,6 +374,19 @@ body {
   .card-container {
     width: 85%;
   }
+  
+    /* footer */
+
+    .social-media-text {
+      margin-left: 10px;
+      width: 20%;
+    }
+  
+    .github-text {
+      margin-left: 10px;
+      width: 20%;
+    }
+  
 
 }
 
@@ -409,6 +423,19 @@ body {
   .card-container {
     width: 100%;
   }
+
+    /* footer */
+
+    .social-media-text {
+      margin-left: 10px;
+      width: 20%;
+    }
+  
+    .github-text {
+      margin-left: 10px;
+      width: 20%;
+    }
+  
 
 
 }
@@ -459,6 +486,18 @@ body {
 
   .card-container {
     width: 100%;
+  }
+
+  /* footer */
+
+  .social-media-text {
+    margin-left: 10px;
+    width: 20%;
+  }
+
+  .github-text {
+    margin-left: 10px;
+    width: 20%;
   }
 
 }
