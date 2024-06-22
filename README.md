@@ -679,20 +679,20 @@ The about us blurb was created by [ChatGpt](https://chat.openai.com/) in order t
 
 The FAQ questions and answers were created by [ChatGpt](https://chat.openai.com/) in order to help ensure they were relevant to the site and to an e-commerce site.
 
-#### Images
+### Images
 
-##### Site Design Images
+#### Site Design Images
 
 - Home Page banner 1 by Bianca Ackermann on [Unsplash](https://unsplash.com/photos/white-and-black-jigsaw-puzzle-_1gP4OY6wAU?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)
 - Home Page banner 2 by Bianca Ackermann on [Unsplash](https://unsplash.com/photos/white-and-pink-jigsaw-puzzle-ETL4_ZPBH1s?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)
 - Home Page banner 3 by Bianca Ackermann on [Unsplash](https://unsplash.com/photos/person-in-red-sweater-and-gray-pants-mxsXtGVjiBg?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)
 - About Us Image by Benjamin Zanatta on [Unsplash](https://unsplash.com/photos/grayscale-photo-of-person-holding-flower-WbkfJ2TmSug?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)
 
-##### Product Photos
+#### Product Photos
 
 All of the product pictures that were used across this application were sourced from [Art and Hobby](https://www.artnhobby.ie/?gad_source=1&gclid=CjwKCAjwjqWzBhAqEiwAQmtgT9NMJBR8SrB8sW_z0DMByGkwbYFUtDMj0HCnUdXYTvCT08Ps23vNgRoCVFEQAvD_BwE), this site is purely for educational purposes only . 
 
-##### User Submitted Puzzle Exchange Photos
+#### User Submitted Puzzle Exchange Photos
 
 All of the puzzles used in the puzzle exchange possts are ones which are owend by me. 
 
