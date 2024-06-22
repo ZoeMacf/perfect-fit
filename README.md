@@ -734,6 +734,7 @@ I would like to say thanks to following:
  
 - [Django Documentation](https://docs.djangoproject.com/en/5.0/) was forever open when I was working on this project as a quick reference and refresher for various aspects of Django.
 - [Bootstrap4 Documentation](https://getbootstrap.com/docs/4.0/getting-started/introduction/) was essential to ensuring that I made my site as streamlined and responsive as possible across various screen sizes and devices. 
+- Boutique Ado walkthrough for helping with the building of my project and as a refresher during bug fixes and setting up Stripe implementation.
 - All of the tutors for Code Institute who without I would be lost for this project, they were so patient and helpful to me especially when I struggled with my submit message feature.
 - My mentor Luke for helping me througough this project and providing great feedback. 
 - My cohort facilitator Laura Mayock for helping in keeping me grounded when I was getting overwhelmed towards the end of this project. 
