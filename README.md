@@ -297,11 +297,37 @@ Through the use of the board I was able to create categories of 'To Do' , 'In Pr
 
 I also implemented 'Bugs' and 'Fixed' categories to keep track of any bugs which occurred in development and note when they had been fixed.
 
+## Business Model
+
+### Perfect Fit - Business Model
+
+The business model which was chosen for this e-commerce site was B2C (Business to Customer) The aim of Perfect Fit is to be a site for longtime puzzle enthusiasts but also welcoming to people are new to the hobby. 
+
+This was done by offering a wide range of puzzle sizes with the higher piece count being geared towards the more intermediate user. Accessories were also included as a means to aid users in their puzzle making and help them really get the best of their hobby.
+
+The overall design of the site was taken into consideration as well, a minimalistic look was chosen as to not distract the user from the goal of the site, the highlight of the site are the puzzles. Thus by having a more muted colour scheme the puzzles pop allowing them to stand out more for the users.
+
 ## SEO and Marketing
 
 ### SEO (Search Engine Optimisation)
 
 SEO or Search Engine Optimisation is a process in which to improve your websites visibility so that there is a higher chance of a user coming across the website when searching for terms which fall in line with your websites description and keywords.
+
+To ensure that the site had a high SEO rating the following was done: 
+
+- Implement meta keywords and descriptions to ensure more hits for the site when users are searching for puzzles online.
+- Through using [XML-Sitemaps](https://www.xml-sitemaps.com/) a sitemap was created using the final deployed version of Perfect Fit. This was created to help provide the most important pages for Perfect Fit to enhance its visibility on search engines.
+- Finally a robots.txt file was created to advise which parts of the site could and could not be accessed by search engine crawlers.
+
+### Marketing
+
+#### Perfect Fit - Facebook
+
+To help promote Perfect Fit on social media a Facebook page was created. E-commerce excels on Facebook through consistent posts, user interactivity, polls for user feedback and even competitions to entice new and recurring users. 
+
+<img src="./documentation/facebook_page.PNG">
+
+<img src="./documentation/facebook2.PNG">
 
 ## Features
 
