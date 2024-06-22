@@ -12,12 +12,13 @@ Deployed Site - [Perfect Fit](https://perfect-fit-141e9a7db2b0.herokuapp.com/)
 
 ## Contents
 
-* [User Experience](#user-experience)
-* [Design](#design)
+- [User Experience](#user-experience)
+- [Design](#design)
     - [Wireframes](#wireframes)
     - [Site Styling](site-styling)
     - [Database Design](#database-design)
-* [Agile Development](#agile-development)
+- [Agile Development](#agile-development)
+- [SEO and Marketing](#seo-and-marketing)
 - [Features](#features)
 - [Languages and Technologies](#languages-and-technologies)
     - [Languages and Frameworks](#languages-and-frameworks)
@@ -294,7 +295,13 @@ To help visualise the project and plan accordingly with a schedule I used the Ka
 
 Through the use of the board I was able to create categories of 'To Do' , 'In Progress' and 'Done'. With this I was able to see what was needed in the more essential parts of the project. 
 
-I also implemented 'Bugs' and 'Fixed' categories to keep track of any bugs which occurred in development and note when they had been fixed. 
+I also implemented 'Bugs' and 'Fixed' categories to keep track of any bugs which occurred in development and note when they had been fixed.
+
+## SEO and Marketing
+
+### SEO (Search Engine Optimisation)
+
+SEO or Search Engine Optimisation is a process in which to improve your websites visibility so that there is a higher chance of a user coming across the website when searching for terms which fall in line with your websites description and keywords.
 
 ## Features
 
