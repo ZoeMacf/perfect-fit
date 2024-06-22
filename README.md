@@ -243,6 +243,8 @@ The Message model will be used to allow users to message each other in regards t
 
 The Newsletter model will be used as blog post where site admins can add posts with updates for the overall site and also to announce any in person meetups for puzzle exchange or competitions. 
 
+During the development the Newsletter was removed and a Contact Us model was instead created, in future implentations I would like to add a check for users when signing up and on the user profile to sign up for a newsletter
+
 #### Contact Us Model
 
 During development a Contact Us model was created in order to allow users to reach out to Perfect Fit with any queries. 
@@ -612,9 +614,19 @@ All of the .py files were formatted using Black and then checked with a Pep8 lin
 
 In order to ensure that Perfect Fit is accessible to all users, all pages were checked using [WAVE](https://wave.webaim.org/) (Web accessibility evaluation tool) was used to ensure that the site was accessible to all users and followed semantic standards.
 
-
+To ensure accessibilty was met all forms, inputs and anchor tags had aria-labels added to them. Some of the pages which required user authentication or adding items to the bag could not be tested but the same changes were made.
 
 ## Bugs
+
+As bugs were found during development they were added to the project board and moved to fixed when resolved. However the following bugs could not be fixed.
+
+#### Toast Notification Close Button
+Custom CSS and even Bootstrap classes would not update the styling of close button - even using ```!important``` did not fix the issue. 
+
+#### User Submitted Puzzles Link
+During development a page was created for User Submissions which would display the relevant posts for logged in user. Initially the list would display but trying to create a link to the post would fail, I was unable to resolve this error even with Tutor Support - there seems to be an issue with using the product id. 
+
+Due to this the user submissions list has been temporarily removed from the final deployed code till it can be fixed.
 
 ## Deployment
 
