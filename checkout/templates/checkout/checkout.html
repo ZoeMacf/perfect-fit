@@ -74,7 +74,8 @@
         </div>
         <div class="col-12 col-lg-6">
             <p class="text-muted content-font">Please fill out the form below to complete your order</p>
-            <form action="{% url 'checkout' %}" method="POST" id="payment-form">
+            <form action="{% url 'checkout' %}" method="POST" id="payment-form"
+                aria-label="Form to enter delivery information">
                 {% csrf_token %}
                 <fieldset class="rounded px-3 mb-5 content-font">
                     <legend class="fieldset-label content-font px-1 w-auto">Details</legend>
