@@ -518,6 +518,8 @@ All of the pages for this project were tested using [Google-Lighthouse](https://
 
 ##### Home Page
 
+<img src="./documentation/validation_tests/lighthouse/lighthouse_home.PNG">
+
 ##### Products Page
 
 <img src="./documentation/validation_tests/lighthouse/lighthouse_products.PNG">
