@@ -708,3 +708,14 @@ In the future I would like to implement the following:
 - And events page where users can discuss meetups for trading puzzles, puzzle building competitions.
 
 ## Credits
+
+I would like to say thanks to following: 
+ 
+- [Django Documentation](https://docs.djangoproject.com/en/5.0/) was forever open when I was working on this project as a quick reference and refresher for various aspects of Django.
+- [Bootstrap4 Documentation](https://getbootstrap.com/docs/4.0/getting-started/introduction/) was essential to ensuring that I made my site as streamlined and responsive as possible across various screen sizes and devices. 
+- All of the tutors for Code Institute who without I would be lost for this project, they were so patient and helpful to me especially when I struggled with my submit message feature.
+- My mentor Luke for helping me througough this project and providing great feedback. 
+- My cohort facilitator Laura Mayock for helping in keeping me grounded when I was getting overwhelmed towards the end of this project. 
+- My cohort for being great support and advising on tips for parts of the project. 
+- Code Institute for giving me the opportunity to upskill and create these projects.
+- My family and friends for being so patient with me especially towards the end of this project when things started to pile up and become a bit overwhelming but without there support I would not have got this project to completion.
