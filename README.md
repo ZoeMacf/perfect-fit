@@ -476,10 +476,6 @@ wireframes.
 
 ### Code Validation
 
-#### Pep8 Validation
-
-All of the .py files were formatted using Black and then checked with a Pep8 linter, all of the files passed this check - however the settings.py had long lines for the password authentication section and I was unable to remedy this issue. 
-
 #### Lighthouse
 
 All of the pages for this project were tested using [Google-Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/).
@@ -520,7 +516,53 @@ All of the pages for this project were tested using [Google-Lighthouse](https://
 
 ### JavaScript Validation
 
+#### HTML Validation
+
+##### Home Page
+
+
+##### Products Page
+
+##### Products Details Page
+
+##### Bag Page
+
+##### Checkout Page
+
+##### Checkout Success Page
+
+##### About Us Page
+
+##### FAQ Page
+
+##### Puzzle Exchange Page
+
+##### Puzzle Exchange Submission Page
+
+##### Puzzle Exchange User's Submissions
+
+##### User Profile Page
+
+##### Add Product Page
+
+##### Edit Product Page
+
+##### Sign Up Page
+
+##### Log In Page
+
+##### Log Out Page
+
+HTML markup was validated using [W3C-HTML](https://validator.w3.org/nu/)
+
+#### CSS Validation
+
+<img src="./documentation/validation_tests/css_validation.PNG">
+
+
 ### Python Validation
+
+All of the .py files were formatted using Black and then checked with a Pep8 linter, all of the files passed this check - however the settings.py had long lines for the password authentication section and I was unable to remedy this issue. 
 
 ### Manual Testing
 
