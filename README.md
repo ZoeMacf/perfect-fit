@@ -520,37 +520,28 @@ All of the pages for this project were tested using [Google-Lighthouse](https://
 
 ##### Products Page
 
+<img src="./documentation/validation_tests/lighthouse/lighthouse_products.PNG">
+
 ##### Products Details Page
+
+<img src="./documentation/validation_tests/lighthouse/lighthouse_product_detail.PNG">
 
 ##### Bag Page
 
-##### Checkout Page
-
-##### Checkout Success Page
+<img src="./documentation/validation_tests/lighthouse/lighthouse_shopping_bag.PNG">
 
 ##### About Us Page
 
+<img src="./documentation/validation_tests/lighthouse/lighthouse_about_us.PNG">
+
 ##### FAQ Page
 
-##### Puzzle Exchange Page
+<img src="./documentation/validation_tests/lighthouse/lighthouse_faq.PNG">
 
-##### Puzzle Exchange Submission Page
+##### Contact Us Page
 
-##### Puzzle Exchange User's Submissions
+<img src="./documentation/validation_tests/lighthouse/lighthouse_contact_us.PNG">
 
-##### User Profile Page
-
-##### Add Product Page
-
-##### Edit Product Page
-
-##### Sign Up Page
-
-##### Log In Page
-
-##### Log Out Page
-
-### JavaScript Validation
 
 #### HTML Validation
 
