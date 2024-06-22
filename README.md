@@ -518,42 +518,13 @@ All of the pages for this project were tested using [Google-Lighthouse](https://
 
 #### HTML Validation
 
-##### Home Page
-
-
-##### Products Page
-
-##### Products Details Page
-
-##### Bag Page
-
-##### Checkout Page
-
-##### Checkout Success Page
-
-##### About Us Page
-
-##### FAQ Page
-
-##### Puzzle Exchange Page
-
-##### Puzzle Exchange Submission Page
-
-##### Puzzle Exchange User's Submissions
-
-##### User Profile Page
-
-##### Add Product Page
-
-##### Edit Product Page
-
-##### Sign Up Page
-
-##### Log In Page
-
-##### Log Out Page
-
 HTML markup was validated using [W3C-HTML](https://validator.w3.org/nu/)
+
+<img src="./documentation/validation_tests/html_validation.PNG">
+
+All of the html used throughout the site passed bar these three issues, the warning regarding possible misuse of the aria-label was orginally an error regarding labelledby but when I looked into a fix for the issue the solution was to change it to aria-label.
+
+The error regarding aria-labelled by was fixed but is still showing, I reviewed the code and was unable to find it. 
 
 #### CSS Validation
 
