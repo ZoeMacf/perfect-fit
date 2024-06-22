@@ -662,11 +662,12 @@ For this project the application was deployed to Heroku using the following step
 2. From here I clicked 'New' and created a new app.
 3. perfect-fit was chosen as the app name and region set to EU, finally I clicked 'Create app'
 4. In the 'Settings' tab and from here I located the section 'Config Vars' and clicked 'Reveal Config Vars'
-5. From here you can add your environment variables for your Database, Secret Key, CollecStatic, Cloudinary Database, Stripe Public Key, Stripe Private Key and Webhook Secret. 
-6. After this has been done navigate to the 'Deploy' tab and under 'Deployment Method' click on 'GitHub'.
-7. Locate the repository from GitHub and paste the link here and click 'Connect'.
-8. Ensure that the selected branch is 'main branch' before clicking to Deploy. 
-9. Once the build is finished there should be a message saying 'Your app was successfully deployed' with a 'View' button.
+5. Ensure that within the settings.py file the DEBUG has been set to False
+6. From here you can add your environment variables for your Database, Secret Key, CollecStatic, Cloudinary Database, Stripe Public Key, Stripe Private Key and Webhook Secret. 
+7. After this has been done navigate to the 'Deploy' tab and under 'Deployment Method' click on 'GitHub'.
+8. Locate the repository from GitHub and paste the link here and click 'Connect'.
+9. Ensure that the selected branch is 'main branch' before clicking to Deploy. 
+10. Once the build is finished there should be a message saying 'Your app was successfully deployed' with a 'View' button.
 
 ### Site Content
 
@@ -696,5 +697,14 @@ All of the product pictures that were used across this application were sourced 
 All of the puzzles used in the puzzle exchange possts are ones which are owend by me. 
 
 ## Future Features
+
+Throughout the development of the project there were many ideas that had which I felt would really boost the impact of the site.
+
+In the future I would like to implement the following:
+
+- When a user is viewing their notifications I would like the option to click to send them an email advising that you wish to trade. This would be handled through Perfect Fit so as to not reveal email addresses to either user. 
+- I would like to look at implementing a forum style page where users can post completed puzzles, discuss puzzle building tips, maybe post videos of puzzles being built. 
+- I would like to possibly upgrade the messaging system to an instant message system or add it alongside the current system. 
+- And events page where users can discuss meetups for trading puzzles, puzzle building competitions.
 
 ## Credits
