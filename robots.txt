@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /accounts/
+Disallow: /admin/
+Disallow: /bag/
+Sitemap: https://perfect-fit-141e9a7db2b0.herokuapp.com/sitemap.xml
